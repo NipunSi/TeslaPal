@@ -1,0 +1,1581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005F21B4D409ED0B9D6E62C6CF1E838B /* RemoteStartDriveCommandOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9720A3E6AE3ABE13033C22383DFF7B3E /* RemoteStartDriveCommandOptions.swift */; };
+		0652EBB6A236F60DB07BE96922ED647B /* CommandResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB77664A8B4B214F0DA2FADB92790B1 /* CommandResponse.swift */; };
+		068E5963381B58D7D8CD321462F567ED /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC05B1D999211381309F68C708EFCE2 /* Compression.swift */; };
+		075F1F27DA1C0BD2F720365E96B30660 /* StreamEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376A1C94244871C9E9AC848FB87D79F4 /* StreamEvent.swift */; };
+		11D028CA3CF3C8C69F1383F2A728A4B2 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B848D4B971DBD5739B15E48467580F /* ActivityIndicatorView.swift */; };
+		1627E6FA0453D6DB472BA444F1D32AE7 /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1B0564D2C64D1F5499D23DE60987F /* SSLClientCertificate.swift */; };
+		1C419F0B8F677FDCF36FC608503E964C /* StreamControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B288C19231FC02360C6B69E4DE83E7 /* StreamControl.swift */; };
+		1FDA2A166BD3F6B74CB267052C4CBDE1 /* TeslaSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 268E417FD447C7CA946A10CC91A0930F /* TeslaSwift-dummy.m */; };
+		2881F2BBCEF6C2D083E38D98820308A8 /* Pods-TeslaHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E99F907CE539901A204FBE0A87CF1E /* Pods-TeslaHelper-dummy.m */; };
+		28E74C2EBF00CBA61C31A2885F3F90C7 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226EA41AF995779995701872936A383 /* Speed.swift */; };
+		294D61E8A195B6A1F6AEDCF0F73599A5 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F722EBD5776712492866AB3CB042FD /* Starscream-dummy.m */; };
+		2B5992C6E3955CD2821615AA7897376A /* WindowControlCommandOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7232F914934CC9B59C8CFC07420D0067 /* WindowControlCommandOptions.swift */; };
+		2BA9C3E8BA62371A3FD5744DC076A85C /* SetTemperatureCommandOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DF66DA038BF344FD9F46716847F194 /* SetTemperatureCommandOptions.swift */; };
+		2FC0A5E9771D15C4506F67B358E44C9B /* OpenTrunkOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A9D6FE9945FC90EA904EBA04A50099 /* OpenTrunkOptions.swift */; };
+		31DB4EC09FED01273036B40C3EC51F30 /* EqualizerIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC0DA4586A7F1D66E0379FF819EB2 /* EqualizerIndicatorView.swift */; };
+		320E018022758AFD782991C7D8854DB1 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1099292D22A15D641B0BEE3E8927D4AE /* TegKeychainConstants.swift */; };
+		451EBD13E3B4F3B6680206D3ED79A043 /* MaxDefrostCommandOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415FBB54FEA1C9FCA77F321F712ED97 /* MaxDefrostCommandOptions.swift */; };
+		45FD251482107FA8FA83F3CCC379FC4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB895F616DD1C4C7C1587261E4EBE5D /* Foundation.framework */; };
+		485A776035D4B1EF97E8AE0E95A66502 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46912296E78902DA08DF05EB8C29AC69 /* KeychainSwiftAccessOptions.swift */; };
+		4B255EB0716A1BB473E696C20812C697 /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0881B9F1307BB7D29A6FF4152B6B406 /* KeychainSwift-dummy.m */; };
+		4B8F4CBB086CC616F2E817AFDD998589 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065C7C5B3DDA4B73402216FF2C87343D /* GenericResponse.swift */; };
+		4DC6C132AEF3E02BDD5ABC89333233B3 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB38FAFEC96E2BD89D54469AAD780AAA /* KeychainSwift.swift */; };
+		4FBC440F3BF49225961E67471A1A4CF8 /* RotatingDotsIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC360C85A8FFFDB862046744DC2EFA0F /* RotatingDotsIndicatorView.swift */; };
+		51AAA2758E5B0916B5F89354587C8484 /* FlickeringDotsIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE9F56EE4450C0338E10119EC001394 /* FlickeringDotsIndicatorView.swift */; };
+		5243897F11A59F9076D92F114ABC4854 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB895F616DD1C4C7C1587261E4EBE5D /* Foundation.framework */; };
+		5510DE6F1DB104860871665D2A84B530 /* SpeedLimitOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EF3C09936174E1AE0AA4BE7EADC4F /* SpeedLimitOptions.swift */; };
+		59CB6E614ED52F347BAA113CC58EBD6B /* ChargeLimitPercentageCommandOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D27A6688DCCF8DB8F2ADBA9991263A2 /* ChargeLimitPercentageCommandOptions.swift */; };
+		5BC4DA1122EDF764E3F57287BC923BE8 /* ArcsIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49610C603F08045D3BC796E7ACF8D227 /* ArcsIndicatorView.swift */; };
+		68441EADA2459C4023056456784760D1 /* Codable+JSONString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F427319D11B2F3421A020275BEBC0CEB /* Codable+JSONString.swift */; };
+		6B9AB7C05E639807DAB60254F2859678 /* TeslaEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F017FD8CC4B1307F53BFC174AA17BDE /* TeslaEndpoint.swift */; };
+		73BFFBF9D1538516FDE74BEABE0C8726 /* GrowingCircleIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567DE44A10C392322CD728500E5FAC3A /* GrowingCircleIndicatorView.swift */; };
+		74DDBF47539EB98680E83BD95227DD8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB895F616DD1C4C7C1587261E4EBE5D /* Foundation.framework */; };
+		74EF083CD4224A64C0597994F53E81CE /* ScalingDotsIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D736B9F018299491CED13F292CDEFE50 /* ScalingDotsIndicatorView.swift */; };
+		7502F522FCE790C1B464EEEC3AF8B583 /* PopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = FD64B1BCBC068AF6EEB703F09EF7825D /* PopupView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D43017D5E8180BC7FA0C03C6D9F8729 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3319CBE6BF16B5B2366BDE834B663B5E /* Starscream.framework */; };
+		7F5E17E2A6D02E230DEE6B44A5032CE1 /* ExytePopupView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC6A902C5A6529E0C5597E1255FCBFD /* ExytePopupView-dummy.m */; };
+		7FDF2D75CC0CE4A675F742DCF4228AE8 /* HomeLinkCommandOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCAFD69646804AD4AFB503F18CBA5AB /* HomeLinkCommandOptions.swift */; };
+		81457D2E4D971C064BB046370732C95D /* ActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EEB116EFEBC666A5FB4D4FCF271AF3F /* ActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86411909FA3F973EB8625EE0F8677171 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC24B7D991A9E41AD5DC8989F1DB83 /* ErrorMessage.swift */; };
+		8B3350D96B15B975184C8EE0819F9623 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7386DAB312CB4B98B2F588A7026AE7FD /* SSLSecurity.swift */; };
+		8FE51D73D3236300F7312BCABD303241 /* GrowingArcIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2202922992ED8E341C236394EFC5AE0 /* GrowingArcIndicatorView.swift */; };
+		909830185627F6798280F281D0ACB887 /* NearbyChargingSites.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC12E5D867B07B5C5C35531BFD1089 /* NearbyChargingSites.swift */; };
+		93AEC0BDFC6828DFB03A8D6A481E39C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB895F616DD1C4C7C1587261E4EBE5D /* Foundation.framework */; };
+		95C709CE3F129041F1F7F7F51A1E4F32 /* SentryModeCommandOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D869979F7A1C4591A61CE330A5FCD1DF /* SentryModeCommandOptions.swift */; };
+		96D67F9A7630A34944B6EAAD47F785E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB895F616DD1C4C7C1587261E4EBE5D /* Foundation.framework */; };
+		989532C8C7A294E4CC2D10FBECB4911E /* SetSunRoofCommandOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C42B1EDCDD780EA7FC6CDDB4EF25C5 /* SetSunRoofCommandOptions.swift */; };
+		9EC6236B5C2FA8D070A6CF67B57E0B07 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905A659BAE3F1704E428D0CD8EE9E3DA /* Authentication.swift */; };
+		A0292523B915E285F6BFA27B1FDEC8F2 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C81961BF19B46DCF6A483836712A70A /* Vehicle.swift */; };
+		A2ABC40274D183F250880F2E280B9387 /* ExytePopupView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7274BFFA995287C4F3891276CC469EB1 /* ExytePopupView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F60B69F6E285A601D69EF80EAC9EE6 /* ActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1121FB34455CAF5A9228EE32FF37D1B3 /* ActivityIndicatorView-dummy.m */; };
+		B4A6283FDFA04E3A7B6FD0C13B6FEF32 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B145D3EF2E3A5A59B461342EFC64A17D /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA30670ED4950657DC336349F7AF6073 /* ShareToVehicleOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B200DBC17823A66E3456B9E751670 /* ShareToVehicleOptions.swift */; };
+		BF18BD6BFD1723D595231DF250BCFE92 /* ActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = F7AC7A30FD94668CCE3B824FA0FA3C4C /* ActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C02D9FEB295BDA1359D2F52C80F8E75A /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487483680E9CFBBC46626FD5ECA735AD /* WebSocket.swift */; };
+		C06BC45DFFB8A660A8ECAE1E188F89E0 /* ClimateState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5F9829498499CF4314DC0747EEFB49 /* ClimateState.swift */; };
+		C3905037CE8620D38EF4DA0AB90C106C /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7417FB518DAF98FAE90CAC7FB78BEE0 /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4105690A5B0DF7134EFA0A1C4FC5940 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7425A74DF5E531B7EB1174BBBEE524 /* Distance.swift */; };
+		C4D13565A214066EA82F85F8CBC00D99 /* OpacityDotsIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD4D221B7F03FDE22915224434DDB3 /* OpacityDotsIndicatorView.swift */; };
+		C8F09D4C13C4538241950A3DD8FDF230 /* ValetCommandOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5B9CF53D501AC7987DE53FFD189DC7 /* ValetCommandOptions.swift */; };
+		D341F4AABE13C64809A4C5E5EB9E99BB /* TeslaSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3BBEA653E3224612F5F49E5D32ABDA /* TeslaSwift.swift */; };
+		D7B341B812C8619BDA003A3A4BBB3970 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB895F616DD1C4C7C1587261E4EBE5D /* Foundation.framework */; };
+		DEC429990585AFA103ED09488002FD51 /* VehicleExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656F1B2A2ECB77ABB4ACB9BFA03A36B /* VehicleExtended.swift */; };
+		E036F9EC1D12186316CCD827FEA76592 /* TeslaSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EFB62F4DFF872932771373ACFF012DA /* TeslaSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2C71FE785464497C11D43F99F0DBE01 /* DriveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785E60951C8D644A06F16B6369572137 /* DriveState.swift */; };
+		E319DB6B3710ABBB9E529B6AAEAEE479 /* Pods-TeslaHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9EAB8DAC808963B5233E1BB0119E72 /* Pods-TeslaHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E62A4FCF8F18B99B61F105ADDFA9475F /* SoftwareUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B712FB66722B5B20A4C482A768F5CE2 /* SoftwareUpdate.swift */; };
+		E748CCFB37869A491332ACAF38450CBD /* RemoteSteeringWheelHeaterRequestOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18AF5426800D8F1D5262310324BD45 /* RemoteSteeringWheelHeaterRequestOptions.swift */; };
+		E7D11E27DE5D8A1532B77134E9F58A1A /* ChargeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE913DBB49894C12A4FCE8DE6C317BE /* ChargeState.swift */; };
+		E8DF3610AF3845C564D120F76A43DA21 /* VehicleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A124522DF946FA30EBD6E2ADEC0D266D /* VehicleConfig.swift */; };
+		ED260A3ADD53F4DCBD5B779D11E7EC42 /* VehicleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9359DA23F02EBAA113715470EF3CCE7A /* VehicleState.swift */; };
+		EF689FE920ED58EFCBC5E44CC9414CEB /* RemoteSeatHeaterRequestOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECCF1D0866509E371321489CC8A6D8D /* RemoteSeatHeaterRequestOptions.swift */; };
+		F9A8312B64902D51D362D06F0330BC7B /* GuiSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D04883FF4425281C18391B3442F45 /* GuiSettings.swift */; };
+		FACEE46ED68AD1CD95FA18AA0DA911FD /* DefaultIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE763CB0388D056B6715A7FC169284B1 /* DefaultIndicatorView.swift */; };
+		FBA03A84AA79CA129091F708DB2A335C /* GradientIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BC3848B69385A3221FDEED7493F19 /* GradientIndicatorView.swift */; };
+		FD59C290D3C3FCEC5118821500C68763 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3370B6913AD8615CA94317DAFB0ACCC9 /* PopupView.swift */; };
+		FFB963DF864A03CC6EA576F836334E56 /* TeslaStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C71B0C53C10241819C9B8F048DBAA /* TeslaStreaming.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FAB3529CA38259F58D5698801C842BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3BF7971BE024EA2CBC58C6A22E7F7CD;
+			remoteInfo = ExytePopupView;
+		};
+		32F28B8C72C270F4C3EAEDFC7ACA709B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FCE153AC08FA8550EA5C50623A01BF0;
+			remoteInfo = TeslaSwift;
+		};
+		936B8E3C2B4D092799FACE4877636F42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		9F6535DD07363424C46D3CCE25375587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8110BD3DF03DA7EC9063B1E5C18AB07;
+			remoteInfo = ActivityIndicatorView;
+		};
+		A6333C49595732DC7AEDE765C891D702 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		FE1B9ADA2018CF1E16A0A07A5DD53CF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E54A78BCF82272E99319D7F7F5E8C1;
+			remoteInfo = KeychainSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04EC24B7D991A9E41AD5DC8989F1DB83 /* ErrorMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorMessage.swift; path = Sources/TeslaSwift/Model/ErrorMessage.swift; sourceTree = "<group>"; };
+		065C7C5B3DDA4B73402216FF2C87343D /* GenericResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericResponse.swift; path = Sources/TeslaSwift/Model/GenericResponse.swift; sourceTree = "<group>"; };
+		06B435B52163686C21C72863F4FCB03D /* KeychainSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.debug.xcconfig; sourceTree = "<group>"; };
+		06EC00CD9B01AF17ECF451B96E8D2D66 /* Pods-TeslaHelper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeslaHelper-Info.plist"; sourceTree = "<group>"; };
+		0AE913DBB49894C12A4FCE8DE6C317BE /* ChargeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChargeState.swift; path = Sources/TeslaSwift/Model/ChargeState.swift; sourceTree = "<group>"; };
+		0D18AF5426800D8F1D5262310324BD45 /* RemoteSteeringWheelHeaterRequestOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteSteeringWheelHeaterRequestOptions.swift; path = Sources/TeslaSwift/Model/RemoteSteeringWheelHeaterRequestOptions.swift; sourceTree = "<group>"; };
+		0DD5FADC7BD4ACF285FFCD33D50222FB /* KeychainSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KeychainSwift-Info.plist"; sourceTree = "<group>"; };
+		0DD9DAB50D08DF8C58C8E5577A467011 /* ActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		1099292D22A15D641B0BEE3E8927D4AE /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Sources/TegKeychainConstants.swift; sourceTree = "<group>"; };
+		1121FB34455CAF5A9228EE32FF37D1B3 /* ActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		12B288C19231FC02360C6B69E4DE83E7 /* StreamControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamControl.swift; path = Sources/TeslaSwift/Model/StreamControl.swift; sourceTree = "<group>"; };
+		16C29E1BE4A1C8DC9A3D3309D2F80D47 /* TeslaSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TeslaSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B712FB66722B5B20A4C482A768F5CE2 /* SoftwareUpdate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoftwareUpdate.swift; path = Sources/TeslaSwift/Model/SoftwareUpdate.swift; sourceTree = "<group>"; };
+		268E417FD447C7CA946A10CC91A0930F /* TeslaSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TeslaSwift-dummy.m"; sourceTree = "<group>"; };
+		2732FB18E951915C90E99E10AC09633B /* ActivityIndicatorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ActivityIndicatorView.release.xcconfig; sourceTree = "<group>"; };
+		2BFC114B85755E94FCE80A234E7430C4 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		2F09644E1954BD9985572ACE0F9780EB /* Pods-TeslaHelper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TeslaHelper-acknowledgements.plist"; sourceTree = "<group>"; };
+		2FEBC0DA4586A7F1D66E0379FF819EB2 /* EqualizerIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EqualizerIndicatorView.swift; path = Source/Indicators/EqualizerIndicatorView.swift; sourceTree = "<group>"; };
+		31B848D4B971DBD5739B15E48467580F /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActivityIndicatorView.swift; path = Source/ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		32103C5F18D4073069416A52A7434239 /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
+		3319CBE6BF16B5B2366BDE834B663B5E /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3370B6913AD8615CA94317DAFB0ACCC9 /* PopupView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupView.swift; path = Source/PopupView.swift; sourceTree = "<group>"; };
+		376A1C94244871C9E9AC848FB87D79F4 /* StreamEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamEvent.swift; path = Sources/TeslaSwift/Model/StreamEvent.swift; sourceTree = "<group>"; };
+		37B96C9026AD4F8B937313ADF54E1BA5 /* Pods-TeslaHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeslaHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		37D910FB24763E967E586372D7CAB6B6 /* ExytePopupView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ExytePopupView.modulemap; sourceTree = "<group>"; };
+		3A2C71B0C53C10241819C9B8F048DBAA /* TeslaStreaming.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TeslaStreaming.swift; path = Sources/TeslaSwift/TeslaStreaming.swift; sourceTree = "<group>"; };
+		3D27A6688DCCF8DB8F2ADBA9991263A2 /* ChargeLimitPercentageCommandOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChargeLimitPercentageCommandOptions.swift; path = Sources/TeslaSwift/Model/ChargeLimitPercentageCommandOptions.swift; sourceTree = "<group>"; };
+		40A1B0564D2C64D1F5499D23DE60987F /* SSLClientCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLClientCertificate.swift; path = Sources/Starscream/SSLClientCertificate.swift; sourceTree = "<group>"; };
+		4226EA41AF995779995701872936A383 /* Speed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Speed.swift; path = Sources/TeslaSwift/Model/Speed.swift; sourceTree = "<group>"; };
+		46912296E78902DA08DF05EB8C29AC69 /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Sources/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		46DD59DE759324C7920A8447CD4B0D72 /* ExytePopupView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExytePopupView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		487483680E9CFBBC46626FD5ECA735AD /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		49610C603F08045D3BC796E7ACF8D227 /* ArcsIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArcsIndicatorView.swift; path = Source/Indicators/ArcsIndicatorView.swift; sourceTree = "<group>"; };
+		4C81961BF19B46DCF6A483836712A70A /* Vehicle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Vehicle.swift; path = Sources/TeslaSwift/Model/Vehicle.swift; sourceTree = "<group>"; };
+		4CB77664A8B4B214F0DA2FADB92790B1 /* CommandResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandResponse.swift; path = Sources/TeslaSwift/Model/CommandResponse.swift; sourceTree = "<group>"; };
+		4F5EF3C09936174E1AE0AA4BE7EADC4F /* SpeedLimitOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeedLimitOptions.swift; path = Sources/TeslaSwift/Model/SpeedLimitOptions.swift; sourceTree = "<group>"; };
+		52587309E64DA549C478FC01255DF2F7 /* TeslaSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TeslaSwift-Info.plist"; sourceTree = "<group>"; };
+		567DE44A10C392322CD728500E5FAC3A /* GrowingCircleIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrowingCircleIndicatorView.swift; path = Source/Indicators/GrowingCircleIndicatorView.swift; sourceTree = "<group>"; };
+		56E99F907CE539901A204FBE0A87CF1E /* Pods-TeslaHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TeslaHelper-dummy.m"; sourceTree = "<group>"; };
+		5FCD4D221B7F03FDE22915224434DDB3 /* OpacityDotsIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpacityDotsIndicatorView.swift; path = Source/Indicators/OpacityDotsIndicatorView.swift; sourceTree = "<group>"; };
+		68B6B4EB0CE51714283351BD24B85D98 /* Pods_TeslaHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeslaHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		708A4B72CEFEFDD40CEF320F0CE3E1C0 /* Pods-TeslaHelper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TeslaHelper-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7232F914934CC9B59C8CFC07420D0067 /* WindowControlCommandOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowControlCommandOptions.swift; path = Sources/TeslaSwift/Model/WindowControlCommandOptions.swift; sourceTree = "<group>"; };
+		7274BFFA995287C4F3891276CC469EB1 /* ExytePopupView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExytePopupView-umbrella.h"; sourceTree = "<group>"; };
+		72CFB894C73E739356D4BA4C90F0D254 /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
+		7386DAB312CB4B98B2F588A7026AE7FD /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
+		73F722EBD5776712492866AB3CB042FD /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		7415FBB54FEA1C9FCA77F321F712ED97 /* MaxDefrostCommandOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaxDefrostCommandOptions.swift; path = Sources/TeslaSwift/Model/MaxDefrostCommandOptions.swift; sourceTree = "<group>"; };
+		7493B02D9679BBB414B9818307A2DDBA /* KeychainSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.release.xcconfig; sourceTree = "<group>"; };
+		785E60951C8D644A06F16B6369572137 /* DriveState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DriveState.swift; path = Sources/TeslaSwift/Model/DriveState.swift; sourceTree = "<group>"; };
+		79AE10246C8C357236581F360C7B4B2C /* TeslaSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TeslaSwift.modulemap; sourceTree = "<group>"; };
+		7B7425A74DF5E531B7EB1174BBBEE524 /* Distance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distance.swift; path = Sources/TeslaSwift/Model/Distance.swift; sourceTree = "<group>"; };
+		7C5F9829498499CF4314DC0747EEFB49 /* ClimateState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClimateState.swift; path = Sources/TeslaSwift/Model/ClimateState.swift; sourceTree = "<group>"; };
+		7EC6A902C5A6529E0C5597E1255FCBFD /* ExytePopupView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ExytePopupView-dummy.m"; sourceTree = "<group>"; };
+		7F017FD8CC4B1307F53BFC174AA17BDE /* TeslaEndpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TeslaEndpoint.swift; path = Sources/TeslaSwift/TeslaEndpoint.swift; sourceTree = "<group>"; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89FED69E5BECDF5BDCD8E1FD2FD0B204 /* ExytePopupView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ExytePopupView-prefix.pch"; sourceTree = "<group>"; };
+		8E9EAB8DAC808963B5233E1BB0119E72 /* Pods-TeslaHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TeslaHelper-umbrella.h"; sourceTree = "<group>"; };
+		8F48ED4295E42D1DCB12EEF33B8A8D49 /* ExytePopupView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExytePopupView.debug.xcconfig; sourceTree = "<group>"; };
+		8FC05B1D999211381309F68C708EFCE2 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
+		905A659BAE3F1704E428D0CD8EE9E3DA /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Sources/TeslaSwift/Model/Authentication.swift; sourceTree = "<group>"; };
+		91C42B1EDCDD780EA7FC6CDDB4EF25C5 /* SetSunRoofCommandOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SetSunRoofCommandOptions.swift; path = Sources/TeslaSwift/Model/SetSunRoofCommandOptions.swift; sourceTree = "<group>"; };
+		92A9D6FE9945FC90EA904EBA04A50099 /* OpenTrunkOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenTrunkOptions.swift; path = Sources/TeslaSwift/Model/OpenTrunkOptions.swift; sourceTree = "<group>"; };
+		9359DA23F02EBAA113715470EF3CCE7A /* VehicleState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VehicleState.swift; path = Sources/TeslaSwift/Model/VehicleState.swift; sourceTree = "<group>"; };
+		9656F1B2A2ECB77ABB4ACB9BFA03A36B /* VehicleExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VehicleExtended.swift; path = Sources/TeslaSwift/Model/VehicleExtended.swift; sourceTree = "<group>"; };
+		9720A3E6AE3ABE13033C22383DFF7B3E /* RemoteStartDriveCommandOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteStartDriveCommandOptions.swift; path = Sources/TeslaSwift/Model/RemoteStartDriveCommandOptions.swift; sourceTree = "<group>"; };
+		98C5EC73BFE510101D96677BB4AA2629 /* Pods-TeslaHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TeslaHelper.modulemap"; sourceTree = "<group>"; };
+		9B7FDC14C9B9F9C6DACB58438085E052 /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		9C3D04883FF4425281C18391B3442F45 /* GuiSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuiSettings.swift; path = Sources/TeslaSwift/Model/GuiSettings.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3BBEA653E3224612F5F49E5D32ABDA /* TeslaSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TeslaSwift.swift; path = Sources/TeslaSwift/TeslaSwift.swift; sourceTree = "<group>"; };
+		9EE9F56EE4450C0338E10119EC001394 /* FlickeringDotsIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlickeringDotsIndicatorView.swift; path = Source/Indicators/FlickeringDotsIndicatorView.swift; sourceTree = "<group>"; };
+		9EEB116EFEBC666A5FB4D4FCF271AF3F /* ActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		9EFB62F4DFF872932771373ACFF012DA /* TeslaSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TeslaSwift-umbrella.h"; sourceTree = "<group>"; };
+		A124522DF946FA30EBD6E2ADEC0D266D /* VehicleConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VehicleConfig.swift; path = Sources/TeslaSwift/Model/VehicleConfig.swift; sourceTree = "<group>"; };
+		A42DA6DCBA6D9CF3538A7F0C8E4A1172 /* TeslaSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TeslaSwift-prefix.pch"; sourceTree = "<group>"; };
+		A76BEE225A54ED199C628A6B89A201AC /* Pods-TeslaHelper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TeslaHelper-frameworks.sh"; sourceTree = "<group>"; };
+		AB38FAFEC96E2BD89D54469AAD780AAA /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Sources/KeychainSwift.swift; sourceTree = "<group>"; };
+		B0881B9F1307BB7D29A6FF4152B6B406 /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
+		B145D3EF2E3A5A59B461342EFC64A17D /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		B5EB549FDB3A6E3821442749E7B5674B /* ActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		B88F0B1ECEEDEA5BB84C2BC39007C9D6 /* ActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
+		B8CDFB6ECC8713F9280DB6E85A3B6044 /* ExytePopupView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ExytePopupView-Info.plist"; sourceTree = "<group>"; };
+		BF5B9CF53D501AC7987DE53FFD189DC7 /* ValetCommandOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValetCommandOptions.swift; path = Sources/TeslaSwift/Model/ValetCommandOptions.swift; sourceTree = "<group>"; };
+		C2DCA40006C6236D58DA61210776A73F /* ExytePopupView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExytePopupView.release.xcconfig; sourceTree = "<group>"; };
+		C77B34C94CC6DD89FBED332235860828 /* ActivityIndicatorView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ActivityIndicatorView.debug.xcconfig; sourceTree = "<group>"; };
+		CBCAFD69646804AD4AFB503F18CBA5AB /* HomeLinkCommandOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeLinkCommandOptions.swift; path = Sources/TeslaSwift/Model/HomeLinkCommandOptions.swift; sourceTree = "<group>"; };
+		CD0B200DBC17823A66E3456B9E751670 /* ShareToVehicleOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShareToVehicleOptions.swift; path = Sources/TeslaSwift/Model/ShareToVehicleOptions.swift; sourceTree = "<group>"; };
+		CD6BC3848B69385A3221FDEED7493F19 /* GradientIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientIndicatorView.swift; path = Source/Indicators/GradientIndicatorView.swift; sourceTree = "<group>"; };
+		D021635163C2538771FAF0BBD57FAE31 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		D0CC12E5D867B07B5C5C35531BFD1089 /* NearbyChargingSites.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NearbyChargingSites.swift; path = Sources/TeslaSwift/Model/NearbyChargingSites.swift; sourceTree = "<group>"; };
+		D736B9F018299491CED13F292CDEFE50 /* ScalingDotsIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScalingDotsIndicatorView.swift; path = Source/Indicators/ScalingDotsIndicatorView.swift; sourceTree = "<group>"; };
+		D869979F7A1C4591A61CE330A5FCD1DF /* SentryModeCommandOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SentryModeCommandOptions.swift; path = Sources/TeslaSwift/Model/SentryModeCommandOptions.swift; sourceTree = "<group>"; };
+		D8B5CB1EE488BF8EE2AC5172158A04D4 /* Pods-TeslaHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TeslaHelper.release.xcconfig"; sourceTree = "<group>"; };
+		DBB895F616DD1C4C7C1587261E4EBE5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DC360C85A8FFFDB862046744DC2EFA0F /* RotatingDotsIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotatingDotsIndicatorView.swift; path = Source/Indicators/RotatingDotsIndicatorView.swift; sourceTree = "<group>"; };
+		DC81B527119B7FF77EA320CB70B2F6E7 /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
+		E2202922992ED8E341C236394EFC5AE0 /* GrowingArcIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrowingArcIndicatorView.swift; path = Source/Indicators/GrowingArcIndicatorView.swift; sourceTree = "<group>"; };
+		E38C46596A7BA8AF58D81EBC139B4B6F /* ActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52CBFCE6B1A619A948EBD399B553EC5 /* TeslaSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TeslaSwift.release.xcconfig; sourceTree = "<group>"; };
+		E5CDC527138551B8C121AE945805B91D /* TeslaSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TeslaSwift.debug.xcconfig; sourceTree = "<group>"; };
+		E7417FB518DAF98FAE90CAC7FB78BEE0 /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		EA7E24E6F78B1BB42C76DC884A789B4B /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
+		EE763CB0388D056B6715A7FC169284B1 /* DefaultIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultIndicatorView.swift; path = Source/Indicators/DefaultIndicatorView.swift; sourceTree = "<group>"; };
+		EECCF1D0866509E371321489CC8A6D8D /* RemoteSeatHeaterRequestOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteSeatHeaterRequestOptions.swift; path = Sources/TeslaSwift/Model/RemoteSeatHeaterRequestOptions.swift; sourceTree = "<group>"; };
+		F427319D11B2F3421A020275BEBC0CEB /* Codable+JSONString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Codable+JSONString.swift"; path = "Sources/TeslaSwift/Model/Codable+JSONString.swift"; sourceTree = "<group>"; };
+		F5DF66DA038BF344FD9F46716847F194 /* SetTemperatureCommandOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SetTemperatureCommandOptions.swift; path = Sources/TeslaSwift/Model/SetTemperatureCommandOptions.swift; sourceTree = "<group>"; };
+		F7AC7A30FD94668CCE3B824FA0FA3C4C /* ActivityIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActivityIndicatorView.h; path = Source/ActivityIndicatorView.h; sourceTree = "<group>"; };
+		FD64B1BCBC068AF6EEB703F09EF7825D /* PopupView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PopupView.h; path = Source/PopupView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09206235EB9393FD6D895453F2569AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D67F9A7630A34944B6EAAD47F785E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A2A9F195399A771D5E644536E9F6CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DDBF47539EB98680E83BD95227DD8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61260F703196434B7CB25BFD926B69DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FD251482107FA8FA83F3CCC379FC4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC046149EC2628762274B9DDA27D4A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5243897F11A59F9076D92F114ABC4854 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F72EE9AA899C04AF1284DE6EC24F9FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B341B812C8619BDA003A3A4BBB3970 /* Foundation.framework in Frameworks */,
+				7D43017D5E8180BC7FA0C03C6D9F8729 /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B1B62FB37A2B93E708F28D902028B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93AEC0BDFC6828DFB03A8D6A481E39C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CBA963C814A425296668DA55D5DE53B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D021635163C2538771FAF0BBD57FAE31 /* Starscream.modulemap */,
+				73F722EBD5776712492866AB3CB042FD /* Starscream-dummy.m */,
+				2BFC114B85755E94FCE80A234E7430C4 /* Starscream-Info.plist */,
+				9B7FDC14C9B9F9C6DACB58438085E052 /* Starscream-prefix.pch */,
+				B145D3EF2E3A5A59B461342EFC64A17D /* Starscream-umbrella.h */,
+				32103C5F18D4073069416A52A7434239 /* Starscream.debug.xcconfig */,
+				EA7E24E6F78B1BB42C76DC884A789B4B /* Starscream.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		2A680FAC8E0935504F097EFB12F96FA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E38C46596A7BA8AF58D81EBC139B4B6F /* ActivityIndicatorView.framework */,
+				46DD59DE759324C7920A8447CD4B0D72 /* ExytePopupView.framework */,
+				9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */,
+				68B6B4EB0CE51714283351BD24B85D98 /* Pods_TeslaHelper.framework */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
+				16C29E1BE4A1C8DC9A3D3309D2F80D47 /* TeslaSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3824BD2E137D9AAB461BFF00CEA6CE08 /* ActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				F7AC7A30FD94668CCE3B824FA0FA3C4C /* ActivityIndicatorView.h */,
+				31B848D4B971DBD5739B15E48467580F /* ActivityIndicatorView.swift */,
+				49610C603F08045D3BC796E7ACF8D227 /* ArcsIndicatorView.swift */,
+				EE763CB0388D056B6715A7FC169284B1 /* DefaultIndicatorView.swift */,
+				2FEBC0DA4586A7F1D66E0379FF819EB2 /* EqualizerIndicatorView.swift */,
+				9EE9F56EE4450C0338E10119EC001394 /* FlickeringDotsIndicatorView.swift */,
+				CD6BC3848B69385A3221FDEED7493F19 /* GradientIndicatorView.swift */,
+				E2202922992ED8E341C236394EFC5AE0 /* GrowingArcIndicatorView.swift */,
+				567DE44A10C392322CD728500E5FAC3A /* GrowingCircleIndicatorView.swift */,
+				5FCD4D221B7F03FDE22915224434DDB3 /* OpacityDotsIndicatorView.swift */,
+				DC360C85A8FFFDB862046744DC2EFA0F /* RotatingDotsIndicatorView.swift */,
+				D736B9F018299491CED13F292CDEFE50 /* ScalingDotsIndicatorView.swift */,
+				3CAE375F412FBA4629B3484169743C95 /* Support Files */,
+			);
+			path = ActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		3CAE375F412FBA4629B3484169743C95 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5EB549FDB3A6E3821442749E7B5674B /* ActivityIndicatorView.modulemap */,
+				1121FB34455CAF5A9228EE32FF37D1B3 /* ActivityIndicatorView-dummy.m */,
+				B88F0B1ECEEDEA5BB84C2BC39007C9D6 /* ActivityIndicatorView-Info.plist */,
+				0DD9DAB50D08DF8C58C8E5577A467011 /* ActivityIndicatorView-prefix.pch */,
+				9EEB116EFEBC666A5FB4D4FCF271AF3F /* ActivityIndicatorView-umbrella.h */,
+				C77B34C94CC6DD89FBED332235860828 /* ActivityIndicatorView.debug.xcconfig */,
+				2732FB18E951915C90E99E10AC09633B /* ActivityIndicatorView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ActivityIndicatorView";
+			sourceTree = "<group>";
+		};
+		4EBDCAC48B8C5B54B25CA981FC2E176D /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				8FC05B1D999211381309F68C708EFCE2 /* Compression.swift */,
+				40A1B0564D2C64D1F5499D23DE60987F /* SSLClientCertificate.swift */,
+				7386DAB312CB4B98B2F588A7026AE7FD /* SSLSecurity.swift */,
+				487483680E9CFBBC46626FD5ECA735AD /* WebSocket.swift */,
+				0CBA963C814A425296668DA55D5DE53B /* Support Files */,
+			);
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		52D124901E89B0619E5F4A4443CBDAD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3824BD2E137D9AAB461BFF00CEA6CE08 /* ActivityIndicatorView */,
+				8F364EC04F331CCA328D04EF96152DEA /* ExytePopupView */,
+				DB39F61F5A17214DDE3706DA7E7711DC /* KeychainSwift */,
+				4EBDCAC48B8C5B54B25CA981FC2E176D /* Starscream */,
+				7B43713EFEC5C9596F68C524AA6712B5 /* TeslaSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		742BE1998FAE2778FAF22ED167D4FE8F /* Pods-TeslaHelper */ = {
+			isa = PBXGroup;
+			children = (
+				98C5EC73BFE510101D96677BB4AA2629 /* Pods-TeslaHelper.modulemap */,
+				708A4B72CEFEFDD40CEF320F0CE3E1C0 /* Pods-TeslaHelper-acknowledgements.markdown */,
+				2F09644E1954BD9985572ACE0F9780EB /* Pods-TeslaHelper-acknowledgements.plist */,
+				56E99F907CE539901A204FBE0A87CF1E /* Pods-TeslaHelper-dummy.m */,
+				A76BEE225A54ED199C628A6B89A201AC /* Pods-TeslaHelper-frameworks.sh */,
+				06EC00CD9B01AF17ECF451B96E8D2D66 /* Pods-TeslaHelper-Info.plist */,
+				8E9EAB8DAC808963B5233E1BB0119E72 /* Pods-TeslaHelper-umbrella.h */,
+				37B96C9026AD4F8B937313ADF54E1BA5 /* Pods-TeslaHelper.debug.xcconfig */,
+				D8B5CB1EE488BF8EE2AC5172158A04D4 /* Pods-TeslaHelper.release.xcconfig */,
+			);
+			name = "Pods-TeslaHelper";
+			path = "Target Support Files/Pods-TeslaHelper";
+			sourceTree = "<group>";
+		};
+		7B43713EFEC5C9596F68C524AA6712B5 /* TeslaSwift */ = {
+			isa = PBXGroup;
+			children = (
+				DB97A8586559DC94B51A2A12197524D0 /* Core */,
+				7F9E630A8304BCFC60430AC94FE10F73 /* Support Files */,
+			);
+			path = TeslaSwift;
+			sourceTree = "<group>";
+		};
+		7F257A2B74F3EFD46E14C417DB0E6322 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				37D910FB24763E967E586372D7CAB6B6 /* ExytePopupView.modulemap */,
+				7EC6A902C5A6529E0C5597E1255FCBFD /* ExytePopupView-dummy.m */,
+				B8CDFB6ECC8713F9280DB6E85A3B6044 /* ExytePopupView-Info.plist */,
+				89FED69E5BECDF5BDCD8E1FD2FD0B204 /* ExytePopupView-prefix.pch */,
+				7274BFFA995287C4F3891276CC469EB1 /* ExytePopupView-umbrella.h */,
+				8F48ED4295E42D1DCB12EEF33B8A8D49 /* ExytePopupView.debug.xcconfig */,
+				C2DCA40006C6236D58DA61210776A73F /* ExytePopupView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ExytePopupView";
+			sourceTree = "<group>";
+		};
+		7F9E630A8304BCFC60430AC94FE10F73 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				79AE10246C8C357236581F360C7B4B2C /* TeslaSwift.modulemap */,
+				268E417FD447C7CA946A10CC91A0930F /* TeslaSwift-dummy.m */,
+				52587309E64DA549C478FC01255DF2F7 /* TeslaSwift-Info.plist */,
+				A42DA6DCBA6D9CF3538A7F0C8E4A1172 /* TeslaSwift-prefix.pch */,
+				9EFB62F4DFF872932771373ACFF012DA /* TeslaSwift-umbrella.h */,
+				E5CDC527138551B8C121AE945805B91D /* TeslaSwift.debug.xcconfig */,
+				E52CBFCE6B1A619A948EBD399B553EC5 /* TeslaSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TeslaSwift";
+			sourceTree = "<group>";
+		};
+		87C55A52C9F62BE88384CED14846B5B0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				742BE1998FAE2778FAF22ED167D4FE8F /* Pods-TeslaHelper */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8F364EC04F331CCA328D04EF96152DEA /* ExytePopupView */ = {
+			isa = PBXGroup;
+			children = (
+				FD64B1BCBC068AF6EEB703F09EF7825D /* PopupView.h */,
+				3370B6913AD8615CA94317DAFB0ACCC9 /* PopupView.swift */,
+				7F257A2B74F3EFD46E14C417DB0E6322 /* Support Files */,
+			);
+			path = ExytePopupView;
+			sourceTree = "<group>";
+		};
+		CD272A03C5BA2A49B245F2735E358B7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3319CBE6BF16B5B2366BDE834B663B5E /* Starscream.framework */,
+				DB2C61061EC170240411C29EF6DD7C9D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				CD272A03C5BA2A49B245F2735E358B7D /* Frameworks */,
+				52D124901E89B0619E5F4A4443CBDAD0 /* Pods */,
+				2A680FAC8E0935504F097EFB12F96FA8 /* Products */,
+				87C55A52C9F62BE88384CED14846B5B0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DB2C61061EC170240411C29EF6DD7C9D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DBB895F616DD1C4C7C1587261E4EBE5D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DB39F61F5A17214DDE3706DA7E7711DC /* KeychainSwift */ = {
+			isa = PBXGroup;
+			children = (
+				AB38FAFEC96E2BD89D54469AAD780AAA /* KeychainSwift.swift */,
+				46912296E78902DA08DF05EB8C29AC69 /* KeychainSwiftAccessOptions.swift */,
+				1099292D22A15D641B0BEE3E8927D4AE /* TegKeychainConstants.swift */,
+				EE198D4C00DCE3136C116F100857AB01 /* Support Files */,
+			);
+			path = KeychainSwift;
+			sourceTree = "<group>";
+		};
+		DB97A8586559DC94B51A2A12197524D0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				905A659BAE3F1704E428D0CD8EE9E3DA /* Authentication.swift */,
+				3D27A6688DCCF8DB8F2ADBA9991263A2 /* ChargeLimitPercentageCommandOptions.swift */,
+				0AE913DBB49894C12A4FCE8DE6C317BE /* ChargeState.swift */,
+				7C5F9829498499CF4314DC0747EEFB49 /* ClimateState.swift */,
+				F427319D11B2F3421A020275BEBC0CEB /* Codable+JSONString.swift */,
+				4CB77664A8B4B214F0DA2FADB92790B1 /* CommandResponse.swift */,
+				7B7425A74DF5E531B7EB1174BBBEE524 /* Distance.swift */,
+				785E60951C8D644A06F16B6369572137 /* DriveState.swift */,
+				04EC24B7D991A9E41AD5DC8989F1DB83 /* ErrorMessage.swift */,
+				065C7C5B3DDA4B73402216FF2C87343D /* GenericResponse.swift */,
+				9C3D04883FF4425281C18391B3442F45 /* GuiSettings.swift */,
+				CBCAFD69646804AD4AFB503F18CBA5AB /* HomeLinkCommandOptions.swift */,
+				7415FBB54FEA1C9FCA77F321F712ED97 /* MaxDefrostCommandOptions.swift */,
+				D0CC12E5D867B07B5C5C35531BFD1089 /* NearbyChargingSites.swift */,
+				92A9D6FE9945FC90EA904EBA04A50099 /* OpenTrunkOptions.swift */,
+				EECCF1D0866509E371321489CC8A6D8D /* RemoteSeatHeaterRequestOptions.swift */,
+				9720A3E6AE3ABE13033C22383DFF7B3E /* RemoteStartDriveCommandOptions.swift */,
+				0D18AF5426800D8F1D5262310324BD45 /* RemoteSteeringWheelHeaterRequestOptions.swift */,
+				D869979F7A1C4591A61CE330A5FCD1DF /* SentryModeCommandOptions.swift */,
+				91C42B1EDCDD780EA7FC6CDDB4EF25C5 /* SetSunRoofCommandOptions.swift */,
+				F5DF66DA038BF344FD9F46716847F194 /* SetTemperatureCommandOptions.swift */,
+				CD0B200DBC17823A66E3456B9E751670 /* ShareToVehicleOptions.swift */,
+				1B712FB66722B5B20A4C482A768F5CE2 /* SoftwareUpdate.swift */,
+				4226EA41AF995779995701872936A383 /* Speed.swift */,
+				4F5EF3C09936174E1AE0AA4BE7EADC4F /* SpeedLimitOptions.swift */,
+				12B288C19231FC02360C6B69E4DE83E7 /* StreamControl.swift */,
+				376A1C94244871C9E9AC848FB87D79F4 /* StreamEvent.swift */,
+				7F017FD8CC4B1307F53BFC174AA17BDE /* TeslaEndpoint.swift */,
+				3A2C71B0C53C10241819C9B8F048DBAA /* TeslaStreaming.swift */,
+				9E3BBEA653E3224612F5F49E5D32ABDA /* TeslaSwift.swift */,
+				BF5B9CF53D501AC7987DE53FFD189DC7 /* ValetCommandOptions.swift */,
+				4C81961BF19B46DCF6A483836712A70A /* Vehicle.swift */,
+				A124522DF946FA30EBD6E2ADEC0D266D /* VehicleConfig.swift */,
+				9656F1B2A2ECB77ABB4ACB9BFA03A36B /* VehicleExtended.swift */,
+				9359DA23F02EBAA113715470EF3CCE7A /* VehicleState.swift */,
+				7232F914934CC9B59C8CFC07420D0067 /* WindowControlCommandOptions.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		EE198D4C00DCE3136C116F100857AB01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC81B527119B7FF77EA320CB70B2F6E7 /* KeychainSwift.modulemap */,
+				B0881B9F1307BB7D29A6FF4152B6B406 /* KeychainSwift-dummy.m */,
+				0DD5FADC7BD4ACF285FFCD33D50222FB /* KeychainSwift-Info.plist */,
+				72CFB894C73E739356D4BA4C90F0D254 /* KeychainSwift-prefix.pch */,
+				E7417FB518DAF98FAE90CAC7FB78BEE0 /* KeychainSwift-umbrella.h */,
+				06B435B52163686C21C72863F4FCB03D /* KeychainSwift.debug.xcconfig */,
+				7493B02D9679BBB414B9818307A2DDBA /* KeychainSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeychainSwift";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7DD31D6411D672EB34DE63BEF3128D16 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2ABC40274D183F250880F2E280B9387 /* ExytePopupView-umbrella.h in Headers */,
+				7502F522FCE790C1B464EEEC3AF8B583 /* PopupView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81A20CB1777E4C6C893C9CEE24A300B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E319DB6B3710ABBB9E529B6AAEAEE479 /* Pods-TeslaHelper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921D32CDC5AFB61E46C8643B2FFDA357 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81457D2E4D971C064BB046370732C95D /* ActivityIndicatorView-umbrella.h in Headers */,
+				BF18BD6BFD1723D595231DF250BCFE92 /* ActivityIndicatorView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97BD77ADDCAB6FA6CF7529B5308B0918 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3905037CE8620D38EF4DA0AB90C106C /* KeychainSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD37AF9B9F78580D159AE761C456202 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A6283FDFA04E3A7B6FD0C13B6FEF32 /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFADED45936B3E86C0737CAD8AB68FC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E036F9EC1D12186316CCD827FEA76592 /* TeslaSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B334E2C50C2C0C66D96CADAEE2EA01 /* Build configuration list for PBXNativeTarget "KeychainSwift" */;
+			buildPhases = (
+				97BD77ADDCAB6FA6CF7529B5308B0918 /* Headers */,
+				E3B35C6F6E358284C831471583BD04CD /* Sources */,
+				4A2A9F195399A771D5E644536E9F6CF4 /* Frameworks */,
+				29186A7FC9690C20BDE41949C4FFD3AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeychainSwift;
+			productName = KeychainSwift;
+			productReference = 9E0FD012ADC3C7179C684035672383E5 /* KeychainSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		219915ACC3139984594A5E445E5A29EF /* Pods-TeslaHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F26ABE39544C8121B8BE976B0B6D675A /* Build configuration list for PBXNativeTarget "Pods-TeslaHelper" */;
+			buildPhases = (
+				81A20CB1777E4C6C893C9CEE24A300B4 /* Headers */,
+				3341B6DBAE06B53A0F7009D6CB1A001D /* Sources */,
+				9CC046149EC2628762274B9DDA27D4A7 /* Frameworks */,
+				E14A95F5A1CADCDCBAACD574B190ECA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1C2EB35F7BA56369784417D5DD3668C /* PBXTargetDependency */,
+				504199E983631B00C671C23247E5810F /* PBXTargetDependency */,
+				2262A9C708AEC5CC9C538D4B4C59CFC7 /* PBXTargetDependency */,
+				2BDF8C4255E1B72BB9DFEF81842D489B /* PBXTargetDependency */,
+				4D3EF8FB692A9EAB2D052F629A4B4F90 /* PBXTargetDependency */,
+			);
+			name = "Pods-TeslaHelper";
+			productName = "Pods-TeslaHelper";
+			productReference = 68B6B4EB0CE51714283351BD24B85D98 /* Pods_TeslaHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8FCE153AC08FA8550EA5C50623A01BF0 /* TeslaSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6D4F6618C1C9EA5770FE06AFB6399E4 /* Build configuration list for PBXNativeTarget "TeslaSwift" */;
+			buildPhases = (
+				CFADED45936B3E86C0737CAD8AB68FC7 /* Headers */,
+				4AE1510C185ACCA9692A3F5E6F039479 /* Sources */,
+				9F72EE9AA899C04AF1284DE6EC24F9FC /* Frameworks */,
+				E6076CC7C0596328E45A82457233660D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D80DE46F85A3ABBD0807215495C96A54 /* PBXTargetDependency */,
+			);
+			name = TeslaSwift;
+			productName = TeslaSwift;
+			productReference = 16C29E1BE4A1C8DC9A3D3309D2F80D47 /* TeslaSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED5C15C705AB67930733A7E237A0A33A /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				ABD37AF9B9F78580D159AE761C456202 /* Headers */,
+				621EE447A1C117BDCD418F5DE070FD3C /* Sources */,
+				09206235EB9393FD6D895453F2569AF9 /* Frameworks */,
+				BE174469BA3F43D1B5CE60520CA93EB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8110BD3DF03DA7EC9063B1E5C18AB07 /* ActivityIndicatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D21F90ADA94696C6CEC89E8373FE21FE /* Build configuration list for PBXNativeTarget "ActivityIndicatorView" */;
+			buildPhases = (
+				921D32CDC5AFB61E46C8643B2FFDA357 /* Headers */,
+				1B9BA4D2B9338FF3F863F293398BFF50 /* Sources */,
+				61260F703196434B7CB25BFD926B69DD /* Frameworks */,
+				DDC0C8757335756C7A6B6BE4C6384228 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActivityIndicatorView;
+			productName = ActivityIndicatorView;
+			productReference = E38C46596A7BA8AF58D81EBC139B4B6F /* ActivityIndicatorView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3BF7971BE024EA2CBC58C6A22E7F7CD /* ExytePopupView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 884B494400A18C5561631E186309B372 /* Build configuration list for PBXNativeTarget "ExytePopupView" */;
+			buildPhases = (
+				7DD31D6411D672EB34DE63BEF3128D16 /* Headers */,
+				BB4BD2F617ABBA09B6883DE835285AE6 /* Sources */,
+				D5B1B62FB37A2B93E708F28D902028B4 /* Frameworks */,
+				017A47C440E0F735883EA6068779441A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExytePopupView;
+			productName = ExytePopupView;
+			productReference = 46DD59DE759324C7920A8447CD4B0D72 /* ExytePopupView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2A680FAC8E0935504F097EFB12F96FA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8110BD3DF03DA7EC9063B1E5C18AB07 /* ActivityIndicatorView */,
+				E3BF7971BE024EA2CBC58C6A22E7F7CD /* ExytePopupView */,
+				07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */,
+				219915ACC3139984594A5E445E5A29EF /* Pods-TeslaHelper */,
+				9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */,
+				8FCE153AC08FA8550EA5C50623A01BF0 /* TeslaSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		017A47C440E0F735883EA6068779441A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29186A7FC9690C20BDE41949C4FFD3AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE174469BA3F43D1B5CE60520CA93EB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC0C8757335756C7A6B6BE4C6384228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14A95F5A1CADCDCBAACD574B190ECA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6076CC7C0596328E45A82457233660D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B9BA4D2B9338FF3F863F293398BFF50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F60B69F6E285A601D69EF80EAC9EE6 /* ActivityIndicatorView-dummy.m in Sources */,
+				11D028CA3CF3C8C69F1383F2A728A4B2 /* ActivityIndicatorView.swift in Sources */,
+				5BC4DA1122EDF764E3F57287BC923BE8 /* ArcsIndicatorView.swift in Sources */,
+				FACEE46ED68AD1CD95FA18AA0DA911FD /* DefaultIndicatorView.swift in Sources */,
+				31DB4EC09FED01273036B40C3EC51F30 /* EqualizerIndicatorView.swift in Sources */,
+				51AAA2758E5B0916B5F89354587C8484 /* FlickeringDotsIndicatorView.swift in Sources */,
+				FBA03A84AA79CA129091F708DB2A335C /* GradientIndicatorView.swift in Sources */,
+				8FE51D73D3236300F7312BCABD303241 /* GrowingArcIndicatorView.swift in Sources */,
+				73BFFBF9D1538516FDE74BEABE0C8726 /* GrowingCircleIndicatorView.swift in Sources */,
+				C4D13565A214066EA82F85F8CBC00D99 /* OpacityDotsIndicatorView.swift in Sources */,
+				4FBC440F3BF49225961E67471A1A4CF8 /* RotatingDotsIndicatorView.swift in Sources */,
+				74EF083CD4224A64C0597994F53E81CE /* ScalingDotsIndicatorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3341B6DBAE06B53A0F7009D6CB1A001D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2881F2BBCEF6C2D083E38D98820308A8 /* Pods-TeslaHelper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE1510C185ACCA9692A3F5E6F039479 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EC6236B5C2FA8D070A6CF67B57E0B07 /* Authentication.swift in Sources */,
+				59CB6E614ED52F347BAA113CC58EBD6B /* ChargeLimitPercentageCommandOptions.swift in Sources */,
+				E7D11E27DE5D8A1532B77134E9F58A1A /* ChargeState.swift in Sources */,
+				C06BC45DFFB8A660A8ECAE1E188F89E0 /* ClimateState.swift in Sources */,
+				68441EADA2459C4023056456784760D1 /* Codable+JSONString.swift in Sources */,
+				0652EBB6A236F60DB07BE96922ED647B /* CommandResponse.swift in Sources */,
+				C4105690A5B0DF7134EFA0A1C4FC5940 /* Distance.swift in Sources */,
+				E2C71FE785464497C11D43F99F0DBE01 /* DriveState.swift in Sources */,
+				86411909FA3F973EB8625EE0F8677171 /* ErrorMessage.swift in Sources */,
+				4B8F4CBB086CC616F2E817AFDD998589 /* GenericResponse.swift in Sources */,
+				F9A8312B64902D51D362D06F0330BC7B /* GuiSettings.swift in Sources */,
+				7FDF2D75CC0CE4A675F742DCF4228AE8 /* HomeLinkCommandOptions.swift in Sources */,
+				451EBD13E3B4F3B6680206D3ED79A043 /* MaxDefrostCommandOptions.swift in Sources */,
+				909830185627F6798280F281D0ACB887 /* NearbyChargingSites.swift in Sources */,
+				2FC0A5E9771D15C4506F67B358E44C9B /* OpenTrunkOptions.swift in Sources */,
+				EF689FE920ED58EFCBC5E44CC9414CEB /* RemoteSeatHeaterRequestOptions.swift in Sources */,
+				005F21B4D409ED0B9D6E62C6CF1E838B /* RemoteStartDriveCommandOptions.swift in Sources */,
+				E748CCFB37869A491332ACAF38450CBD /* RemoteSteeringWheelHeaterRequestOptions.swift in Sources */,
+				95C709CE3F129041F1F7F7F51A1E4F32 /* SentryModeCommandOptions.swift in Sources */,
+				989532C8C7A294E4CC2D10FBECB4911E /* SetSunRoofCommandOptions.swift in Sources */,
+				2BA9C3E8BA62371A3FD5744DC076A85C /* SetTemperatureCommandOptions.swift in Sources */,
+				BA30670ED4950657DC336349F7AF6073 /* ShareToVehicleOptions.swift in Sources */,
+				E62A4FCF8F18B99B61F105ADDFA9475F /* SoftwareUpdate.swift in Sources */,
+				28E74C2EBF00CBA61C31A2885F3F90C7 /* Speed.swift in Sources */,
+				5510DE6F1DB104860871665D2A84B530 /* SpeedLimitOptions.swift in Sources */,
+				1C419F0B8F677FDCF36FC608503E964C /* StreamControl.swift in Sources */,
+				075F1F27DA1C0BD2F720365E96B30660 /* StreamEvent.swift in Sources */,
+				6B9AB7C05E639807DAB60254F2859678 /* TeslaEndpoint.swift in Sources */,
+				FFB963DF864A03CC6EA576F836334E56 /* TeslaStreaming.swift in Sources */,
+				1FDA2A166BD3F6B74CB267052C4CBDE1 /* TeslaSwift-dummy.m in Sources */,
+				D341F4AABE13C64809A4C5E5EB9E99BB /* TeslaSwift.swift in Sources */,
+				C8F09D4C13C4538241950A3DD8FDF230 /* ValetCommandOptions.swift in Sources */,
+				A0292523B915E285F6BFA27B1FDEC8F2 /* Vehicle.swift in Sources */,
+				E8DF3610AF3845C564D120F76A43DA21 /* VehicleConfig.swift in Sources */,
+				DEC429990585AFA103ED09488002FD51 /* VehicleExtended.swift in Sources */,
+				ED260A3ADD53F4DCBD5B779D11E7EC42 /* VehicleState.swift in Sources */,
+				2B5992C6E3955CD2821615AA7897376A /* WindowControlCommandOptions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621EE447A1C117BDCD418F5DE070FD3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068E5963381B58D7D8CD321462F567ED /* Compression.swift in Sources */,
+				1627E6FA0453D6DB472BA444F1D32AE7 /* SSLClientCertificate.swift in Sources */,
+				8B3350D96B15B975184C8EE0819F9623 /* SSLSecurity.swift in Sources */,
+				294D61E8A195B6A1F6AEDCF0F73599A5 /* Starscream-dummy.m in Sources */,
+				C02D9FEB295BDA1359D2F52C80F8E75A /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4BD2F617ABBA09B6883DE835285AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5E17E2A6D02E230DEE6B44A5032CE1 /* ExytePopupView-dummy.m in Sources */,
+				FD59C290D3C3FCEC5118821500C68763 /* PopupView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B35C6F6E358284C831471583BD04CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B255EB0716A1BB473E696C20812C697 /* KeychainSwift-dummy.m in Sources */,
+				4DC6C132AEF3E02BDD5ABC89333233B3 /* KeychainSwift.swift in Sources */,
+				485A776035D4B1EF97E8AE0E95A66502 /* KeychainSwiftAccessOptions.swift in Sources */,
+				320E018022758AFD782991C7D8854DB1 /* TegKeychainConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2262A9C708AEC5CC9C538D4B4C59CFC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeychainSwift;
+			target = 07E54A78BCF82272E99319D7F7F5E8C1 /* KeychainSwift */;
+			targetProxy = FE1B9ADA2018CF1E16A0A07A5DD53CF6 /* PBXContainerItemProxy */;
+		};
+		2BDF8C4255E1B72BB9DFEF81842D489B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = A6333C49595732DC7AEDE765C891D702 /* PBXContainerItemProxy */;
+		};
+		4D3EF8FB692A9EAB2D052F629A4B4F90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TeslaSwift;
+			target = 8FCE153AC08FA8550EA5C50623A01BF0 /* TeslaSwift */;
+			targetProxy = 32F28B8C72C270F4C3EAEDFC7ACA709B /* PBXContainerItemProxy */;
+		};
+		504199E983631B00C671C23247E5810F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ExytePopupView;
+			target = E3BF7971BE024EA2CBC58C6A22E7F7CD /* ExytePopupView */;
+			targetProxy = 2FAB3529CA38259F58D5698801C842BB /* PBXContainerItemProxy */;
+		};
+		D80DE46F85A3ABBD0807215495C96A54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 936B8E3C2B4D092799FACE4877636F42 /* PBXContainerItemProxy */;
+		};
+		E1C2EB35F7BA56369784417D5DD3668C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ActivityIndicatorView;
+			target = D8110BD3DF03DA7EC9063B1E5C18AB07 /* ActivityIndicatorView */;
+			targetProxy = 9F6535DD07363424C46D3CCE25375587 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F2F5BDAADEE4BA4A4D19C5A590ECE1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7493B02D9679BBB414B9818307A2DDBA /* KeychainSwift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainSwift/KeychainSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
+				PRODUCT_MODULE_NAME = KeychainSwift;
+				PRODUCT_NAME = KeychainSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		23DAA796EA37EA24566495280E748F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32103C5F18D4073069416A52A7434239 /* Starscream.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		26211A277BE0BC4A804053127643E4E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52CBFCE6B1A619A948EBD399B553EC5 /* TeslaSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TeslaSwift/TeslaSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TeslaSwift/TeslaSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TeslaSwift/TeslaSwift.modulemap";
+				PRODUCT_MODULE_NAME = TeslaSwift;
+				PRODUCT_NAME = TeslaSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		35BC321697BA712E466815924337D1AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7E24E6F78B1BB42C76DC884A789B4B /* Starscream.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		484033624D954C134B63F540BA990534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B435B52163686C21C72863F4FCB03D /* KeychainSwift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainSwift/KeychainSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainSwift/KeychainSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KeychainSwift/KeychainSwift.modulemap";
+				PRODUCT_MODULE_NAME = KeychainSwift;
+				PRODUCT_NAME = KeychainSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7DA646477EBF5F38637D2C90C2FA53A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C77B34C94CC6DD89FBED332235860828 /* ActivityIndicatorView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = ActivityIndicatorView;
+				PRODUCT_NAME = ActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AF1F8D2941B0228930706FA0F2C9BB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C4688D89EFA3C8B0B5D63D77857F926F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2732FB18E951915C90E99E10AC09633B /* ActivityIndicatorView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ActivityIndicatorView/ActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = ActivityIndicatorView;
+				PRODUCT_NAME = ActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5E38D73F9443CC9DF6C56955FCD4C23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2DCA40006C6236D58DA61210776A73F /* ExytePopupView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ExytePopupView/ExytePopupView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExytePopupView/ExytePopupView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ExytePopupView/ExytePopupView.modulemap";
+				PRODUCT_MODULE_NAME = ExytePopupView;
+				PRODUCT_NAME = ExytePopupView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCE71AAEA449BA7A9E6BF07A7A3FACE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5CDC527138551B8C121AE945805B91D /* TeslaSwift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TeslaSwift/TeslaSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TeslaSwift/TeslaSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TeslaSwift/TeslaSwift.modulemap";
+				PRODUCT_MODULE_NAME = TeslaSwift;
+				PRODUCT_NAME = TeslaSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CCEC373EFCAF451AF597AE16059CF520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B5CB1EE488BF8EE2AC5172158A04D4 /* Pods-TeslaHelper.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TeslaHelper/Pods-TeslaHelper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeslaHelper/Pods-TeslaHelper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D7BF66DD376EF0237690E39FE4F451FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B96C9026AD4F8B937313ADF54E1BA5 /* Pods-TeslaHelper.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TeslaHelper/Pods-TeslaHelper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TeslaHelper/Pods-TeslaHelper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4EF76DB68E4B8B696D98D32A42C258F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F48ED4295E42D1DCB12EEF33B8A8D49 /* ExytePopupView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ExytePopupView/ExytePopupView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ExytePopupView/ExytePopupView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ExytePopupView/ExytePopupView.modulemap";
+				PRODUCT_MODULE_NAME = ExytePopupView;
+				PRODUCT_NAME = ExytePopupView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */,
+				AF1F8D2941B0228930706FA0F2C9BB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		884B494400A18C5561631E186309B372 /* Build configuration list for PBXNativeTarget "ExytePopupView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4EF76DB68E4B8B696D98D32A42C258F /* Debug */,
+				C5E38D73F9443CC9DF6C56955FCD4C23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6B334E2C50C2C0C66D96CADAEE2EA01 /* Build configuration list for PBXNativeTarget "KeychainSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				484033624D954C134B63F540BA990534 /* Debug */,
+				1F2F5BDAADEE4BA4A4D19C5A590ECE1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D21F90ADA94696C6CEC89E8373FE21FE /* Build configuration list for PBXNativeTarget "ActivityIndicatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DA646477EBF5F38637D2C90C2FA53A4 /* Debug */,
+				C4688D89EFA3C8B0B5D63D77857F926F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6D4F6618C1C9EA5770FE06AFB6399E4 /* Build configuration list for PBXNativeTarget "TeslaSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE71AAEA449BA7A9E6BF07A7A3FACE5 /* Debug */,
+				26211A277BE0BC4A804053127643E4E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED5C15C705AB67930733A7E237A0A33A /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23DAA796EA37EA24566495280E748F06 /* Debug */,
+				35BC321697BA712E466815924337D1AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F26ABE39544C8121B8BE976B0B6D675A /* Build configuration list for PBXNativeTarget "Pods-TeslaHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7BF66DD376EF0237690E39FE4F451FC /* Debug */,
+				CCEC373EFCAF451AF597AE16059CF520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module TeslaSwift {
+  umbrella header "TeslaSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
