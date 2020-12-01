@@ -15,7 +15,8 @@ struct Location: Identifiable {
 }
 
 struct ChargerDetailView: View {
-    
+    let themeColor = UserDefaults.standard.color(forKey: "theme")
+
     var charger: NearbyChargingSites.Supercharger
     @State private  var locations: [Location] = []
     
@@ -30,14 +31,14 @@ struct ChargerDetailView: View {
                 ) {
                     Text("Charger")
                     Circle()
-                        .fill(Color.green)
+                        .fill(Color(themeColor ?? .green))
                         .frame(width: 15, height: 15)
                 }
             }
             .frame(height: 250)
 
             Text(charger.name ?? "")
-                .font(.title)
+                .font(.system(size: 26, weight: .bold, design: .rounded))
                 .layoutPriority(2)
             Text("\(charger.availableStalls ?? 0) / \(charger.totalStalls ?? 0) stalls available")
                 .font(.headline)

@@ -12,6 +12,8 @@ import ExytePopupView
 import ActivityIndicatorView
 
 struct ControlsView: View {
+    let themeColor = UserDefaults.standard.color(forKey: "theme")
+
     
     let api = TeslaSwift()
     let keychain = KeychainSwift()
@@ -160,7 +162,7 @@ struct ControlsView: View {
                             }
                             .padding()
                             .frame(width: 300, height: 70)
-                            .background(askingForPassword ? Color.gray : Color.green)
+                            .background(askingForPassword ? Color.gray : Color(themeColor ?? .green))
                             .foregroundColor(.white)
                             .cornerRadius(15)
                             .disabled(!isRemoteStartEnabled)
@@ -181,7 +183,7 @@ struct ControlsView: View {
             }.navigationBarTitle("Controls")
             .padding()
             .navigationBarItems(trailing: ActivityIndicatorView(isVisible: $isLoading, type: .scalingDots)
-                                    .foregroundColor(.green)
+                                    .foregroundColor(Color(themeColor ?? .green))
                                     .frame(width: 60, height: 40))
         }.onAppear(perform: prepareScreen)
         .fullScreenCover(isPresented: $userIsntAuthenticated) {
@@ -195,7 +197,7 @@ struct ControlsView: View {
                     .font(.headline)
             }
             .frame(width: 300, height: 50)
-            .background(Color.green)
+            .background(Color(themeColor ?? .green))
             .foregroundColor(.white)
             .cornerRadius(30.0)
         }
@@ -218,19 +220,20 @@ struct ControlsView: View {
         //getCarData()
         isLoading = false
         
-        let data = carData.data[0]
-        isLocked = data.vehicleState?.locked ?? true
-        isPortOpen = data.chargeState?.chargePortDoorOpen ?? false
-        isClimateOn = data.climateState?.isClimateOn ?? false
-        isRemoteStartEnabled = data.vehicleState?.remoteStartSupported ?? false
-        isSteeringWheelHeaterOn = data.climateState?.steeringWheelHeater ?? false
-        isSentryModeOn = data.vehicleState?.sentryMode ?? false
-        if data.vehicleState?.driverWindowOpen ?? false || data.vehicleState?.driverWindowOpen ?? false || data.vehicleState?.driverWindowOpen ?? false || data.vehicleState?.driverWindowOpen ?? false {
-            isWindowOpen = true
+        if carData.data.count > 0 {
+            let data = carData.data[0]
+            isLocked = data.vehicleState?.locked ?? true
+            isPortOpen = data.chargeState?.chargePortDoorOpen ?? false
+            isClimateOn = data.climateState?.isClimateOn ?? false
+            isRemoteStartEnabled = data.vehicleState?.remoteStartSupported ?? false
+            isSteeringWheelHeaterOn = data.climateState?.steeringWheelHeater ?? false
+            isSentryModeOn = data.vehicleState?.sentryMode ?? false
+            if data.vehicleState?.driverWindowOpen ?? false || data.vehicleState?.driverWindowOpen ?? false || data.vehicleState?.driverWindowOpen ?? false || data.vehicleState?.driverWindowOpen ?? false {
+                isWindowOpen = true
+            }
+            driverTemp = (data.climateState?.driverTemperatureSetting?.fahrenheit ?? 0)
+            passengerTemp = (data.climateState?.passengerTemperatureSetting?.fahrenheit ?? 0)
         }
-        driverTemp = (data.climateState?.driverTemperatureSetting?.fahrenheit ?? 0)
-        passengerTemp = (data.climateState?.passengerTemperatureSetting?.fahrenheit ?? 0)
-        
     }
     
     func tryToAuth() {
@@ -363,6 +366,8 @@ struct ControlsView: View {
 
 
 struct CommandButton: View {
+    let themeColor = UserDefaults.standard.color(forKey: "theme")
+
     var imageName: String
     var title: String
     var command: (VehicleCommand, String, String) -> Void
@@ -385,7 +390,7 @@ struct CommandButton: View {
         .padding(.horizontal)
         .frame(minWidth: 0, maxWidth: .infinity)
         .frame(height: height)
-        .background(Color.green)
+        .background(Color(themeColor ?? .green))
         .foregroundColor(.white)
         .cornerRadius(15)
     }

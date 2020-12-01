@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,14 +14,12 @@
 		424F2B2D2544AA4E00CDEE38 /* ChargerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F2B2C2544AA4E00CDEE38 /* ChargerDetailView.swift */; };
 		424F2B3F25478F2400CDEE38 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F2B3E25478F2400CDEE38 /* StatsView.swift */; };
 		424F2B48254791E700CDEE38 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F2B47254791E700CDEE38 /* CustomAlert.swift */; };
-		424F2B522548AA0000CDEE38 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 424F2B502548AA0000CDEE38 /* Model.xcdatamodeld */; };
-		424F2B562548BA3B00CDEE38 /* CarDataEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F2B542548BA3B00CDEE38 /* CarDataEntry+CoreDataClass.swift */; };
-		424F2B572548BA3B00CDEE38 /* CarDataEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F2B552548BA3B00CDEE38 /* CarDataEntry+CoreDataProperties.swift */; };
 		42789FF92537B089007A7198 /* ChooseVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42789FF82537B089007A7198 /* ChooseVehicle.swift */; };
 		42B65C10253CC4B800ABC9C9 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B65C0F253CC4B800ABC9C9 /* CustomSlider.swift */; };
 		42B65C13253CD80000ABC9C9 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B65C12253CD80000ABC9C9 /* ControlsView.swift */; };
 		42B65C17253D0D8700ABC9C9 /* BatteryProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B65C16253D0D8700ABC9C9 /* BatteryProgressView.swift */; };
 		42B65C1C253E2DEF00ABC9C9 /* Bars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B65C1B253E2DEE00ABC9C9 /* Bars.swift */; };
+		42B92855254E47D500BE6FBF /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B92854254E47D500BE6FBF /* SettingView.swift */; };
 		42C0D09A25379E1300CC843F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0D09925379E1300CC843F /* AppDelegate.swift */; };
 		42C0D09C25379E1300CC843F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0D09B25379E1300CC843F /* SceneDelegate.swift */; };
 		42C0D09E25379E1300CC843F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0D09D25379E1300CC843F /* ContentView.swift */; };
@@ -29,6 +27,10 @@
 		42C0D0A325379E1700CC843F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C0D0A225379E1700CC843F /* Preview Assets.xcassets */; };
 		42C0D0A625379E1700CC843F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C0D0A425379E1700CC843F /* LaunchScreen.storyboard */; };
 		42C0D0B32537ABBC00CC843F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0D0B22537ABBC00CC843F /* LoginView.swift */; };
+		42FE1AE72548F95D000CBE74 /* CarDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42FE1AE52548F95D000CBE74 /* CarDataModel.xcdatamodeld */; };
+		42FE1AF12548FDAE000CBE74 /* CarDataEntry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE1AEF2548FDAE000CBE74 /* CarDataEntry+CoreDataClass.swift */; };
+		42FE1AF22548FDAE000CBE74 /* CarDataEntry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FE1AF02548FDAE000CBE74 /* CarDataEntry+CoreDataProperties.swift */; };
+		42FE1AF6254A00CF000CBE74 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 42FE1AF5254A00CF000CBE74 /* SwiftUICharts */; };
 		6AC52C447EB02B2977571954 /* Pods_TeslaHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F8685DF7C56BBC18C1DA39 /* Pods_TeslaHelper.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,14 +42,12 @@
 		424F2B2C2544AA4E00CDEE38 /* ChargerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerDetailView.swift; sourceTree = "<group>"; };
 		424F2B3E25478F2400CDEE38 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		424F2B47254791E700CDEE38 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
-		424F2B512548AA0000CDEE38 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		424F2B542548BA3B00CDEE38 /* CarDataEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarDataEntry+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		424F2B552548BA3B00CDEE38 /* CarDataEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarDataEntry+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		42789FF82537B089007A7198 /* ChooseVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseVehicle.swift; sourceTree = "<group>"; };
 		42B65C0F253CC4B800ABC9C9 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		42B65C12253CD80000ABC9C9 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		42B65C16253D0D8700ABC9C9 /* BatteryProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryProgressView.swift; sourceTree = "<group>"; };
 		42B65C1B253E2DEE00ABC9C9 /* Bars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bars.swift; sourceTree = "<group>"; };
+		42B92854254E47D500BE6FBF /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = SOURCE_ROOT; };
 		42C0D09625379E1300CC843F /* TeslaHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeslaHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C0D09925379E1300CC843F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42C0D09B25379E1300CC843F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +57,10 @@
 		42C0D0A525379E1700CC843F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42C0D0A725379E1700CC843F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42C0D0B22537ABBC00CC843F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		42FE1AE62548F95D000CBE74 /* CarDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarDataModel.xcdatamodel; sourceTree = "<group>"; };
+		42FE1AEF2548FDAE000CBE74 /* CarDataEntry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarDataEntry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		42FE1AF02548FDAE000CBE74 /* CarDataEntry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarDataEntry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42FE1AFC254A26C6000CBE74 /* ChartView */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ChartView; path = ../ChartView; sourceTree = "<group>"; };
 		B5892C79037DFC96474B24D6 /* Pods-TeslaHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeslaHelper.debug.xcconfig"; path = "Target Support Files/Pods-TeslaHelper/Pods-TeslaHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		B7F8685DF7C56BBC18C1DA39 /* Pods_TeslaHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeslaHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91A352B523489367888FED7 /* Pods-TeslaHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeslaHelper.release.xcconfig"; path = "Target Support Files/Pods-TeslaHelper/Pods-TeslaHelper.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AC52C447EB02B2977571954 /* Pods_TeslaHelper.framework in Frameworks */,
+				42FE1AF6254A00CF000CBE74 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		42C0D08D25379E1300CC843F = {
 			isa = PBXGroup;
 			children = (
+				42FE1AFC254A26C6000CBE74 /* ChartView */,
 				42C0D09825379E1300CC843F /* TeslaHelper */,
 				42C0D09725379E1300CC843F /* Products */,
 				FBA7E106CA0A2AA08336F878 /* Pods */,
@@ -95,8 +101,8 @@
 		42C0D09825379E1300CC843F /* TeslaHelper */ = {
 			isa = PBXGroup;
 			children = (
-				424F2B542548BA3B00CDEE38 /* CarDataEntry+CoreDataClass.swift */,
-				424F2B552548BA3B00CDEE38 /* CarDataEntry+CoreDataProperties.swift */,
+				42FE1AEF2548FDAE000CBE74 /* CarDataEntry+CoreDataClass.swift */,
+				42FE1AF02548FDAE000CBE74 /* CarDataEntry+CoreDataProperties.swift */,
 				42C0D09925379E1300CC843F /* AppDelegate.swift */,
 				42C0D09B25379E1300CC843F /* SceneDelegate.swift */,
 				42B65C16253D0D8700ABC9C9 /* BatteryProgressView.swift */,
@@ -110,10 +116,11 @@
 				424F2B2C2544AA4E00CDEE38 /* ChargerDetailView.swift */,
 				422954192538E848001A9678 /* MainTabViewController.swift */,
 				424F2B3E25478F2400CDEE38 /* StatsView.swift */,
+				42B92854254E47D500BE6FBF /* SettingView.swift */,
 				424F2B1F254357EF00CDEE38 /* CarData.swift */,
 				422954212538EA1F001A9678 /* ChargingView.swift */,
 				42B65C12253CD80000ABC9C9 /* ControlsView.swift */,
-				424F2B502548AA0000CDEE38 /* Model.xcdatamodeld */,
+				42FE1AE52548F95D000CBE74 /* CarDataModel.xcdatamodeld */,
 				42C0D09F25379E1700CC843F /* Assets.xcassets */,
 				42C0D0A425379E1700CC843F /* LaunchScreen.storyboard */,
 				42C0D0A725379E1700CC843F /* Info.plist */,
@@ -165,6 +172,9 @@
 			dependencies = (
 			);
 			name = TeslaHelper;
+			packageProductDependencies = (
+				42FE1AF5254A00CF000CBE74 /* SwiftUICharts */,
+			);
 			productName = TeslaHelper;
 			productReference = 42C0D09625379E1300CC843F /* TeslaHelper.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +202,9 @@
 				Base,
 			);
 			mainGroup = 42C0D08D25379E1300CC843F;
+			packageReferences = (
+				42FE1AF4254A00CF000CBE74 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 42C0D09725379E1300CC843F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,15 +275,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				424F2B2D2544AA4E00CDEE38 /* ChargerDetailView.swift in Sources */,
+				42B92855254E47D500BE6FBF /* SettingView.swift in Sources */,
 				42789FF92537B089007A7198 /* ChooseVehicle.swift in Sources */,
 				42B65C13253CD80000ABC9C9 /* ControlsView.swift in Sources */,
 				42C0D09A25379E1300CC843F /* AppDelegate.swift in Sources */,
-				424F2B572548BA3B00CDEE38 /* CarDataEntry+CoreDataProperties.swift in Sources */,
+				42FE1AF22548FDAE000CBE74 /* CarDataEntry+CoreDataProperties.swift in Sources */,
 				42C0D09C25379E1300CC843F /* SceneDelegate.swift in Sources */,
 				42B65C10253CC4B800ABC9C9 /* CustomSlider.swift in Sources */,
 				422954222538EA1F001A9678 /* ChargingView.swift in Sources */,
 				42C0D0B32537ABBC00CC843F /* LoginView.swift in Sources */,
-				424F2B522548AA0000CDEE38 /* Model.xcdatamodeld in Sources */,
+				42FE1AE72548F95D000CBE74 /* CarDataModel.xcdatamodeld in Sources */,
 				42C0D09E25379E1300CC843F /* ContentView.swift in Sources */,
 				424F2B20254357F100CDEE38 /* CarData.swift in Sources */,
 				4229541A2538E848001A9678 /* MainTabViewController.swift in Sources */,
@@ -278,7 +292,7 @@
 				424F2B242543810F00CDEE38 /* CustomAlert.swift in Sources */,
 				42B65C1C253E2DEF00ABC9C9 /* Bars.swift in Sources */,
 				42B65C17253D0D8700ABC9C9 /* BatteryProgressView.swift in Sources */,
-				424F2B562548BA3B00CDEE38 /* CarDataEntry+CoreDataClass.swift in Sources */,
+				42FE1AF12548FDAE000CBE74 /* CarDataEntry+CoreDataClass.swift in Sources */,
 				424F2B48254791E700CDEE38 /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"TeslaHelper/Preview Content\"";
 				DEVELOPMENT_TEAM = 5YP4T32B58;
 				ENABLE_PREVIEWS = YES;
@@ -432,7 +447,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NipunSingh.TeslaHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -443,6 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"TeslaHelper/Preview Content\"";
 				DEVELOPMENT_TEAM = 5YP4T32B58;
 				ENABLE_PREVIEWS = YES;
@@ -455,7 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NipunSingh.TeslaHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -482,14 +498,33 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		42FE1AF4254A00CF000CBE74 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42FE1AF5254A00CF000CBE74 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42FE1AF4254A00CF000CBE74 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
-		424F2B502548AA0000CDEE38 /* Model.xcdatamodeld */ = {
+		42FE1AE52548F95D000CBE74 /* CarDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				424F2B512548AA0000CDEE38 /* Model.xcdatamodel */,
+				42FE1AE62548F95D000CBE74 /* CarDataModel.xcdatamodel */,
 			);
-			currentVersion = 424F2B512548AA0000CDEE38 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = 42FE1AE62548F95D000CBE74 /* CarDataModel.xcdatamodel */;
+			path = CarDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -13,20 +13,22 @@ struct ChooseVehicle: View {
     let api = TeslaSwift()
     let keychain = KeychainSwift()
     public let teslaJSONDecoder = JSONDecoder()
+    let themeColor = UserDefaults.standard.color(forKey: "theme")
 
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    
     @State private var cars = [Vehicle]()
     
     @State private var showMainApp = false
     
     var body: some View {
+//        NavigationView {
         VStack {
-            Text("Choose a car")
-                .font(.largeTitle)
-                
             List(cars, id: \.displayName) { car in
                 HStack(spacing: 10){
-                    Image(systemName: "car")
-                    Button("\(car.displayName ?? "?")") {
+                    Image(systemName: "car").imageScale(.large)
+                        .foregroundColor(Color(themeColor ?? .green))
+                    Button(action: {
                         //set as main car and move to main app
                         let mainCar = car
                         let encodedMainCar = try! teslaJSONEncoder.encode(mainCar)
@@ -34,15 +36,24 @@ struct ChooseVehicle: View {
                           // Keychain item is saved successfully
                             print("Successfully saved main car")
                             self.showMainApp = true
+                            self.mode.wrappedValue.dismiss()
                         } else {
                           // Report error
                             print("Error saving main car")
                         }
+                    }) {
+                        Text("\(car.displayName ?? "")")
+                            .font(.headline)
                     }
                     
                 }
-            }
+            //}
         }
+        }
+        .fullScreenCover(isPresented: $showMainApp) {
+            MainTabViewController()
+        }
+        .navigationBarTitle("Choose A Car")
         .onAppear(perform: {
             getCars()
         })

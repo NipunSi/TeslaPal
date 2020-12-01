@@ -19,7 +19,7 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
-            Text("")
+            EmptyView()
         }.onAppear(perform: auth)
         .fullScreenCover(isPresented: $showLogin) {
             LoginView()
@@ -39,7 +39,12 @@ struct ContentView: View {
         }
     }
     func auth() {
-        guard let token = keychain.getData("token") else { return }
+        guard let token = keychain.getData("token") else {
+            print("Not authenticated")
+            self.showApp = true
+            return
+            
+        }
         let newToken = try! teslaJSONDecoder.decode(AuthToken.self, from: token)
         
         api.reuse(token: newToken)

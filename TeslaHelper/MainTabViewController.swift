@@ -16,6 +16,8 @@ struct MainTabViewController: View {
 //    public let teslaJSONEncoder = JSONEncoder()
     var theData = CarData()
     
+    let themeColor = UserDefaults.standard.color(forKey: "theme")
+
     @State var selectedView = 0
     
     var body: some View {
@@ -36,17 +38,17 @@ struct MainTabViewController: View {
                     Image(systemName: "chart.bar")
                     Text("Stats")
                 }.tag(2)
-            Text("Settings")
+            SettingView()
                 .tabItem {
                     Image(systemName: "gear")
                     Text("Settings")
                 }.tag(3)
         }
-        //.onAppear(perform: getCarData)
-        .accentColor(.green)
+        //.onAppear(perform: test)
+        .accentColor(Color(themeColor ?? .green))
         .environmentObject(theData)
     }
-    
+
 //    func getCarData() {
 //        print("Getting car data")
 //        let mainCarEncoded = keychain.getData("mainCar")
@@ -85,6 +87,20 @@ struct MainTabViewController: View {
 //        }
 //
 //    }
+}
+
+extension Array where Element:Equatable {
+    func removeDuplicates() -> [Element] {
+        var result = [Element]()
+
+        for value in self {
+            if result.contains(value) == false {
+                result.append(value)
+            }
+        }
+
+        return result
+    }
 }
 
 struct MainTabViewController_Previews: PreviewProvider {

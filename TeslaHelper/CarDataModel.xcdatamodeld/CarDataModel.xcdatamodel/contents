@@ -3,11 +3,12 @@
     <entity name="CarDataEntry" representedClassName="CarDataEntry" syncable="YES">
         <attribute name="batteryLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="energyAdded" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="odometer" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="vehicleID" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="CarDataEntry" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="CarDataEntry" positionX="-63" positionY="-18" width="128" height="133"/>
     </elements>
 </model>

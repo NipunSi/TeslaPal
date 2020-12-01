@@ -10,6 +10,8 @@ import SwiftUI
 struct CustomAlert: View {
     @Binding var textEntered: String
     @Binding var showingAlert: Bool
+    let themeColor = UserDefaults.standard.color(forKey: "theme")
+
     //@Binding var sendStartCommand: Bool
     var command: () -> Void
     
@@ -62,7 +64,7 @@ struct CustomAlert: View {
             .frame(width: 125, height: 50)
             .overlay(
                    RoundedRectangle(cornerRadius: 10)
-                       .stroke(Color.green, lineWidth: 1)
+                       .stroke(Color(themeColor ?? .green), lineWidth: 1)
                )
 
                 

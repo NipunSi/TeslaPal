@@ -10,8 +10,13 @@ import TeslaSwift
 import KeychainSwift
 import ExytePopupView
 import ActivityIndicatorView
+import CoreData
+import MapKit
+import CoreLocation
 
 struct ChargingView: View {
+    let themeColor = UserDefaults.standard.color(forKey: "theme")
+    
     let api = TeslaSwift()
     let keychain = KeychainSwift()
     public let teslaJSONDecoder = JSONDecoder()
@@ -26,6 +31,10 @@ struct ChargingView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject var carInfo: CarData
     
+    @FetchRequest(entity: CarDataEntry.entity(), sortDescriptors: [])
+    
+    var dataEntries: FetchedResults<CarDataEntry>
+    
     @State var carData: VehicleExtended?
     
     @State var showingSavedPopup = false
@@ -34,13 +43,14 @@ struct ChargingView: View {
     
     @State private var userIsntAuthenticated = false
     @State private var isLoading = false
-
+    
     //@State private var chargeState: ChargeState?
     @State private var chargingSites: NearbyChargingSites?
     @State private var superchargers: [NearbyChargingSites.Supercharger]?
     @State private var maxChargeLimit: Float = 0
     @State private var batteryPercentage: Float = 0
     @State private var hasScheduledCharging = false
+    @State private var carAddress = String()
     
     @State private var isDataLoading = true
     
@@ -48,18 +58,66 @@ struct ChargingView: View {
         NavigationView {
             Form {
                 Section { //Car/Batttery info
-                        Text(car.displayName ?? "")
-                            .font(.system(size: 26, weight: .bold, design: .rounded))
+                    Text(car.displayName ?? "")
+                        .font(.system(size: 26, weight: .bold, design: .rounded))
                     BatteryProgressView(progress: $batteryPercentage)
-                            .frame(height: 125)
-                            .padding(15)
-                   // Text("Est. Range: \(Int(chargeState?.estimatedBatteryRange?.miles ?? 0)) mi") //Estimated driving range
-                    Text("Est. Range: \(Int(carData?.chargeState?.estimatedBatteryRange?.miles ?? 0)) mi")
+                        .frame(height: 125)
+                        .padding(15)
                     
-                    Text("Rated Range: \(Int(carData?.chargeState?.ratedBatteryRange?.miles ?? 0)) mi") //Rated driving range
-                    Text("Ideal Range: \(Int(carData?.chargeState?.idealBatteryRange?.miles ?? 0)) mi") //Ideal driving range
-                    Text("Last updated at \(timestampFormatter())")
-                        .font(.subheadline)
+                    VStack{
+                        HStack {
+                            Spacer()
+                            Text("Range")
+                                .font(.system(size: 26, weight: .bold, design: .rounded))
+                            Spacer()
+                        }//.padding(.bottom, 8)
+                        
+                        HStack(spacing: 25){
+                            Spacer()
+                            VStack{
+                                Text("Est.")
+                                    .font(.system(size: 20, design: .rounded))
+                                Text("\(Int(carData?.chargeState?.estimatedBatteryRange?.miles ?? 0)) mi")
+                                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                                
+                            }
+                            VStack{
+                                Text("Rated")
+                                    .font(.system(size: 20, design: .rounded))
+                                Text("\(Int(carData?.chargeState?.ratedBatteryRange?.miles ?? 0)) mi")
+                                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                                
+                            }
+                            VStack{
+                                Text("Ideal")
+                                    .font(.system(size: 20, design: .rounded))
+                                Text("\(Int(carData?.chargeState?.idealBatteryRange?.miles ?? 0)) mi")
+                                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                                
+                            }
+                            Spacer()
+                        }
+                        .padding(.vertical)
+                    }
+                    //                    Text("Est. Range: \(Int(carData?.chargeState?.estimatedBatteryRange?.miles ?? 0)) mi")
+                    //                    Text("Rated Range: \(Int(carData?.chargeState?.ratedBatteryRange?.miles ?? 0)) mi") //Rated driving range
+                    //                    Text("Ideal Range: \(Int(carData?.chargeState?.idealBatteryRange?.miles ?? 0)) mi") //Ideal driving range
+                    HStack {
+                        Spacer()
+                        
+                        Image(systemName: "location.fill")
+                        Text("\(carAddress)")
+                        Spacer()
+                        
+                    }
+                    HStack {
+                        Spacer()
+                        
+                        Image(systemName: "arrow.counterclockwise.icloud.fill")
+                        Text("Last updated at \(timestampFormatter())")
+                        Spacer()
+                        
+                    }
                 }
                 
                 Section {
@@ -91,7 +149,7 @@ struct ChargingView: View {
                                 print("Start charging...")
                                 startCharging()
                             }
-                            .foregroundColor(.green)
+                            .foregroundColor(Color(themeColor ?? .green))
                             Spacer()
                         }
                     case "Complete":
@@ -128,9 +186,8 @@ struct ChargingView: View {
                         .font(.system(size: 26, weight: .bold, design: .rounded))
                     VStack {
                         Text("Max Charge Limit: \(Int(maxChargeLimit))%")
-                        //Slider(value: $maxChargeLimit, in: 50...100, step: 5)
                         CustomSlider(percentage: $maxChargeLimit)
-                            .accentColor(Color.green)
+                            .accentColor(Color(themeColor ?? .green))
                             .frame(height: 40)
                         
                     }
@@ -140,13 +197,13 @@ struct ChargingView: View {
                             print("Saving charge limit settings")
                             changeChargeLimit()
                         }
-                        .foregroundColor(.green)
+                        .foregroundColor(Color(themeColor ?? .green))
                         Spacer()
                     }
                     
                 }
                 
-                Section { //TODO: Create a detail screen for each supercharger with the coordinated passed in to show on a map.
+                Section {
                     Text("Nearby Superchargers")
                         .font(.system(size: 26, weight: .bold, design: .rounded))
                     ForEach(superchargers ?? [NearbyChargingSites.Supercharger](), id: \.name) { site in
@@ -169,20 +226,20 @@ struct ChargingView: View {
                 //Spacer()
             }.navigationBarTitle("Battery")
             .navigationBarItems(trailing:
-                HStack {
-                    ActivityIndicatorView(isVisible: $isLoading, type: .scalingDots)
-                        .foregroundColor(.green)
-                        .frame(width: 60, height: 40)
-                    Button(action: {
-                        print("Refresh Pressed")
-                        viewLoaded()
-                    }) {
-                        Image(systemName: "arrow.clockwise").imageScale(.large)
-                            .foregroundColor(.green)
-                    }
-                })
+                                    HStack {
+                                        ActivityIndicatorView(isVisible: $isLoading, type: .scalingDots)
+                                            .foregroundColor(Color(themeColor ?? .green))
+                                            .frame(width: 60, height: 40)
+                                        Button(action: {
+                                            print("Refresh Pressed")
+                                            viewLoaded()
+                                        }) {
+                                            Image(systemName: "arrow.clockwise").imageScale(.large)
+                                                .foregroundColor(Color(themeColor ?? .green))
+                                        }
+                                    })
         }.onAppear(perform: viewLoaded)
-        .disabled(isDataLoading)
+        //.disabled(isDataLoading)
         .fullScreenCover(isPresented: $userIsntAuthenticated) {
             LoginView()
         }
@@ -194,7 +251,7 @@ struct ChargingView: View {
                     .font(.headline)
             }
             .frame(width: 250, height: 50)
-            .background(Color.green)
+            .background(Color(themeColor ?? .green))
             .foregroundColor(.white)
             .cornerRadius(30.0)
         }
@@ -248,7 +305,7 @@ struct ChargingView: View {
             return
         }
     }
-        
+    
     func wakeCarAndGetData() {
         isLoading = true
         var i = 0
@@ -257,12 +314,12 @@ struct ChargingView: View {
                 i += 1
                 switch response {
                 case .success(let wokeCar):
+                    print("Car state: \(wokeCar.state ?? "")")
                     if wokeCar.state == "online" {
                         print("Attempt #\(i): Car is awake.")
                         timer.invalidate()
                         isLoading = false
                         
-                        //print("Car: \(wokeCar.jsonString ?? "IDK")")
                         //Get charge state and charging sites data
                         getCarData(vehicle:wokeCar)
                         getChargingSites(vehicle: wokeCar)
@@ -274,41 +331,91 @@ struct ChargingView: View {
                 case .failure(let err):
                     print("Error waking up car: \(err.localizedDescription)")
                     isLoading = false
-
+                    
                 }
             }
         }
     }
     
     func getCarData(vehicle: Vehicle) {
-        api.debuggingEnabled = true
+        //api.debuggingEnabled = true
         isLoading = true
+        let df = DateFormatter()
+        df.dateFormat = "MMM d, yyyy"
         
-            api.getAllData(vehicle) { (response: Result<VehicleExtended, Error>) in
+        api.getAllData(vehicle) { (response: Result<VehicleExtended, Error>) in
+            
+            switch response {
+            case .success(let data):
                 
-                switch response {
-                case .success(let data):
+                print("Got car data!: \(data)")
+                
+                DispatchQueue.main.async {
+                    carData = data
+                    carInfo.data.append(data)
+                    batteryPercentage = Float(data.chargeState?.batteryLevel ?? 0) / 100
+                    maxChargeLimit = Float(data.chargeState?.chargeLimitSOC ?? 0)
+                    hasScheduledCharging = data.chargeState?.scheduledChargingPending ?? false
                     
-                    print("Got car data!: \(data)")
-                    
-                    DispatchQueue.main.async {
-                        carData = data
-                        carInfo.data.append(data)
-                        batteryPercentage = Float(data.chargeState?.batteryLevel ?? 0) / 100
-                        maxChargeLimit = Float(data.chargeState?.chargeLimitSOC ?? 0)
-                        hasScheduledCharging = data.chargeState?.scheduledChargingPending ?? false
-                        isLoading = false
-                        
-                        //Save data to CoreData
-                        let newEntry = CarDataEntry()
-
+                    let address = CLGeocoder.init()
+                    address.reverseGeocodeLocation(CLLocation(latitude: data.driveState?.latitude ?? 0, longitude: data.driveState?.longitude ?? 0)) { (places, err) in
+                        if err == nil {
+                            if let place = places {
+                                print("Location: \(place)")
+                                let placemark = place[0]
+                                
+                                carAddress = "\(placemark.thoroughfare ?? ""), \(placemark.locality ?? ""), \(placemark.administrativeArea ?? "")"
+                            }
+                        }
                     }
-                case .failure(let err):
-                    print("Error getting vehicle data: \(err.localizedDescription)")
+                    
                     isLoading = false
-
+                    
+                    //Save data to CoreData
+                    let newEntry = CarDataEntry(context: viewContext)
+                    newEntry.batteryLevel = Int16(data.chargeState?.batteryLevel ?? 0)
+                    newEntry.energyAdded = Int32(data.chargeState?.chargeEnergyAdded ?? 0)
+                    newEntry.odometer = Int32(data.vehicleState?.odometer ?? 0)
+                    newEntry.timestamp = Date()
+                    newEntry.vehicleID = String(data.vehicleID ?? 0)
+                    newEntry.id = UUID()
+                    
+                    //Check if the entry is worth adding to coredata by checking the odometer, energy added, and date
+                    /// If the date is new, save it. If the date is the same, check further for if the odometer is bigger or the energysaved is different
+                    guard let previousEntry = dataEntries.last else { return }
+                    let previousEntryDate = df.string(from: previousEntry.timestamp ?? Date())
+                    let currentDate = df.string(from: Date())
+                    
+                    if currentDate == previousEntryDate {
+                        //There are previous entries on this day
+                        if newEntry.odometer != previousEntry.odometer || newEntry.energyAdded != previousEntry.energyAdded {
+                            //New odometer or energyadded value, so save it
+                            do {
+                                try viewContext.save()
+                                print("Success: New vehicle data saved to core data.")
+                            } catch {
+                                print(error.localizedDescription)
+                            }
+                        } else {
+                            //No new information, so dont save to core data
+                            print("No new vehicle data to save to core data")
+                        }
+                    } else {
+                        //Save entry since its the first of the day
+                        do {
+                            try viewContext.save()
+                            print("Success: Vehicle data saved to core data.")
+                        } catch {
+                            print(error.localizedDescription)
+                        }
+                    }
                 }
+            case .failure(let err):
+                print("Error getting vehicle data: \(err.localizedDescription)")
+                isLoading = false
+                
             }
+        }
         
     }
     
