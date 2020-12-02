@@ -1,11 +1,13 @@
 # TeslaPal
 
-![Front Banner](Images/TeslaPalIcon.png)
+<p align="center">
+<img src="Images/TeslaPalIcon.png" width="100" height="100">
+</p>
 
 ## About the app
 
 <p align="center">
-<img src="Images/screenshots.png">
+<img src="Images/Screenshots.png">
 </p>
 
 ### TeslaPal
