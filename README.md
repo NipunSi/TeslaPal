@@ -24,7 +24,7 @@ The app uses the [Tesla API](https://tesla-api.timdorr.com/) through [TeslaSwift
 ## Concepts used
 
 * SwiftUI
-* In-app dark mode switch with UserDefaults
+* Dark mode and theme color customization
 * Working with networking and JSON data
 * Data persistence using Core Data
 
@@ -35,7 +35,7 @@ The app uses the [Tesla API](https://tesla-api.timdorr.com/) through [TeslaSwift
 - [x] Track daily kWh charged
 - [x] Add theme customization
 - [ ] Trip tracking visualization 
-- [ ] Efficieny calculator
+- [ ] Efficiency calculator
 
 <br />
 <br />
