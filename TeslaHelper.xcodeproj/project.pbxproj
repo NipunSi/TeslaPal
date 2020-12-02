@@ -13,7 +13,6 @@
 		424F2B242543810F00CDEE38 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F2B232543810F00CDEE38 /* CustomAlert.swift */; };
 		424F2B2D2544AA4E00CDEE38 /* ChargerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F2B2C2544AA4E00CDEE38 /* ChargerDetailView.swift */; };
 		424F2B3F25478F2400CDEE38 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F2B3E25478F2400CDEE38 /* StatsView.swift */; };
-		424F2B48254791E700CDEE38 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F2B47254791E700CDEE38 /* CustomAlert.swift */; };
 		42789FF92537B089007A7198 /* ChooseVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42789FF82537B089007A7198 /* ChooseVehicle.swift */; };
 		42B65C10253CC4B800ABC9C9 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B65C0F253CC4B800ABC9C9 /* CustomSlider.swift */; };
 		42B65C13253CD80000ABC9C9 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B65C12253CD80000ABC9C9 /* ControlsView.swift */; };
@@ -293,7 +292,6 @@
 				42B65C1C253E2DEF00ABC9C9 /* Bars.swift in Sources */,
 				42B65C17253D0D8700ABC9C9 /* BatteryProgressView.swift in Sources */,
 				42FE1AF12548FDAE000CBE74 /* CarDataEntry+CoreDataClass.swift in Sources */,
-				424F2B48254791E700CDEE38 /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

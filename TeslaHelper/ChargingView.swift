@@ -330,6 +330,12 @@ struct ChargingView: View {
                     }
                 case .failure(let err):
                     print("Error waking up car: \(err.localizedDescription)")
+                    print("Error type: \(err)")
+                    if "\(err)" == "tokenRevoked" {
+                        print("Token revoked")
+                        self.userIsntAuthenticated = true
+                        timer.invalidate()
+                    }
                     isLoading = false
                     
                 }
@@ -411,7 +417,7 @@ struct ChargingView: View {
                     }
                 }
             case .failure(let err):
-                print("Error getting vehicle data: \(err.localizedDescription)")
+                print("Error getting vehicle data: \(err)")
                 isLoading = false
                 
             }
@@ -428,7 +434,7 @@ struct ChargingView: View {
                 superchargers = sites.superchargers!
                 isLoading = false
             case .failure(let err):
-                print("Error finding charging sites: \(err.localizedDescription)")
+                print("Error finding charging sites: \(err)")
                 isLoading = false
             }
             
