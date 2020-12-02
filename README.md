@@ -1,11 +1,13 @@
 # TeslaPal
 
-![Front Banner](Images/TeslaPalIcon.png)
+<p align="center">
+<img src="Images/TeslaPalIcon.png" width="100" height="100">
+</p>
 
 ## About the app
 
 <p align="center">
-<img src="Images/screenshots.png">
+<img src="Images/Screenshots.png">
 </p>
 
 ### TeslaPal
@@ -38,6 +40,6 @@ The app uses the [Tesla API](https://tesla-api.timdorr.com/) through [TeslaSwift
 <br />
 <br />
 
->This is a learning project created by implementing different Swift components. Check my portfolio at [nipun.io](https://nipun.io).
+>Check my other projects and full portfolio at [nipun.io](https://nipun.io).
 
 <br />
