@@ -40,6 +40,6 @@ The app uses the [Tesla API](https://tesla-api.timdorr.com/) through [TeslaSwift
 <br />
 <br />
 
->This is a learning project created by implementing different Swift components. Check my portfolio at [nipun.io](https://nipun.io).
+>Check my other projects and full portfolio at [nipun.io](https://nipun.io).
 
 <br />
